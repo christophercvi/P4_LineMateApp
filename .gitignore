@@ -1,0 +1,28 @@
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.directory
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# Global Secrets (Safety net for accidently leaked environment files at the root)
+.env
+.env.*
+!.env.example
+
+# Linters
+.ruff_cache/

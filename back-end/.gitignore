@@ -1,0 +1,38 @@
+# Environments and Secrets
+.env
+.venv
+env/
+venv/
+
+# Python Cache and Build Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Testing and Diagnostics
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local Databases (SQLite / aiosqlite)
+*.db
+*.sqlite
+*.sqlite3
+linemate.db
+
+# Local Vector Store (Chroma)
+chroma_db/
+.chroma/
+
+# IDEs and OS Specific
+.vscode/
+.idea/
+.DS_Store
+__MACOSX/
+# Runtime file storage (uploads) and parse cache
+storage/
+.cache/

@@ -1,0 +1,104 @@
+[project]
+name = "back-end"
+version = "1.0.0"
+description = "LineMate - Hearthline kitchen operations assistant (FastAPI, LangChain, LangGraph, Chroma, MCP)"
+readme = "README.md"
+authors = [
+    { name = "Christopher Chan Vi", email = "crv5270@gmail.com" }
+]
+requires-python = ">=3.13.5"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "argon2-cffi>=25.1.0",
+    "chromadb>=1.5.9",
+    "einops>=0.8.2",
+    "fastapi[standard]>=0.142.1",
+    "granian>=2.8.3",
+    "langchain>=1.4.3",
+    "langchain-chroma>=1.1.0",
+    "langchain-ollama>=1.1.0",
+    "langchain-text-splitters>=1.1.2",
+    "langgraph>=1.2.12",
+    "mcp[cli]>=2.2.0",
+    "numpy>=2.5.3",
+    "pandas>=3.0.6",
+    "pillow>=12.3.0",
+    "pydantic>=2.13.5",
+    "pydantic-ai>=2.52.0",
+    "pydantic-settings>=2.15.0",
+    "pyjwt>=2.15.1",
+    "python-multipart>=0.0.32",
+    "sqlalchemy[asyncio]>=2.0.54,<2.1",
+    "sqlmodel>=0.0.47",
+    "structlog>=26.1.0",
+    "tiktoken>=0.14.0",
+    "torch>=2.14.0",
+    "torchvision>=0.29.0",
+    "transformers>=4.57.6,<5",
+    "unstructured[all-docs]>=0.22.18",
+]
+
+[project.scripts]
+back-end = "back_end.main:main"
+linemate-seed = "back_end.seed:cli"
+linemate-mcp = "back_end.mcp_server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "httpx2>=2.13.1",
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+    "pytest-cov>=7.1.0",
+    "ruff>=0.16.9",
+]
+
+# CPU-only PyTorch wheels on Linux/Windows (the vision embedder runs on CPU; avoids the multi-GB CUDA stack).
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+asyncio_default_test_loop_scope = "session"
+testpaths = ["tests"]
+addopts = "-ra"
+markers = [
+    "unit: fast tests with no I/O beyond the in-memory database",
+    "integration: TestClient / ASGI tests that exercise full routes",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["back_end"]
+branch = true
+# SQLAlchemy's asyncio layer resumes coroutines inside greenlets
+concurrency = ["greenlet", "thread"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+
+[tool.ruff]
+line-length = 140
+target-version = "py313"
+extend-exclude = ["storage", "chroma_db", "seed_sources"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "BLE", "UP", "ASYNC", "SIM", "RUF"]
+ignore = ["B008", "RUF001", "RUF002", "RUF003", "RUF036", "SIM105", "SIM108", "ASYNC109", "ASYNC240"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["B011"]

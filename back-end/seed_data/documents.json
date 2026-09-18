@@ -1,0 +1,715 @@
+[
+  {
+    "id": "DOC-REC-001",
+    "title": "Smoked Brisket (Texas style)",
+    "category": "recipe",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:9597.65",
+    "lastReviewed": "@ago:711.65",
+    "source": "seed",
+    "fileName": "smoked-brisket-texas-style.docx",
+    "fileKind": "docx",
+    "summary": "14-hour post-oak smoke, salt-and-pepper rub, wrap at 165°F, hold at 150°F.",
+    "tags": [
+      "bbq",
+      "protein",
+      "hold"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:711.65",
+        "by": "CM-02",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:9597.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-REC-002",
+    "title": "Steak Frites with Chimichurri",
+    "category": "recipe",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:7197.65",
+    "lastReviewed": "@ago:1431.65",
+    "source": "seed",
+    "fileName": "steak-frites-with-chimichurri.pdf",
+    "fileKind": "pdf",
+    "summary": "Hanger steak, double-fried frites, chimichurri made fresh each shift.",
+    "tags": [
+      "protein",
+      "fryer",
+      "sauce"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:1431.65",
+        "by": "CM-02",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:7197.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-REC-003",
+    "title": "Brown Butter Financiers",
+    "category": "recipe",
+    "station": "pastry",
+    "ownerId": "CM-04",
+    "createdAt": "@ago:5997.65",
+    "lastReviewed": "@ago:1071.65",
+    "source": "seed",
+    "fileName": "brown-butter-financiers.pdf",
+    "fileKind": "pdf",
+    "summary": "Almond-flour tea cakes; batter rests overnight; bake 400°F for 11 min.",
+    "tags": [
+      "pastry",
+      "nuts",
+      "allergen"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:1071.65",
+        "by": "CM-04",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:5997.65",
+        "by": "CM-04",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-REC-004",
+    "title": "Laminated Croissant Dough",
+    "category": "recipe",
+    "station": "pastry",
+    "ownerId": "CM-04",
+    "createdAt": "@ago:11997.65",
+    "lastReviewed": "@ago:5031.65",
+    "source": "seed",
+    "fileName": "laminated-croissant-dough.pptx",
+    "fileKind": "pptx",
+    "summary": "Three single folds; proof at 78°F / 80% RH for 2 h. Last reviewed before the proofer was replaced.",
+    "tags": [
+      "pastry",
+      "lamination",
+      "proofing"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:5031.65",
+        "by": "CM-04",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:11997.65",
+        "by": "CM-04",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-REC-005",
+    "title": "Roasted Chicken Stock",
+    "category": "recipe",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:8637.65",
+    "lastReviewed": "@ago:471.65",
+    "source": "seed",
+    "fileName": "roasted-chicken-stock.docx",
+    "fileKind": "docx",
+    "summary": "40 qt batch, 6 h simmer, cool with ice wands per the cooling SOP.",
+    "tags": [
+      "stock",
+      "batch",
+      "cooling"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:471.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:8637.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-REC-006",
+    "title": "House Vinaigrettes",
+    "category": "recipe",
+    "station": "prep",
+    "ownerId": "CM-07",
+    "createdAt": "@ago:10077.65",
+    "lastReviewed": "@ago:4311.65",
+    "source": "seed",
+    "fileName": "house-vinaigrettes.xlsx",
+    "fileKind": "xlsx",
+    "summary": "Sherry, champagne and lemon-dijon vinaigrettes; 3:1 ratio; 7-day shelf life.",
+    "tags": [
+      "sauce",
+      "cold"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:4311.65",
+        "by": "CM-07",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:10077.65",
+        "by": "CM-07",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-001",
+    "title": "Fryer Oil Filtering & Change Schedule",
+    "category": "sop",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:9117.65",
+    "lastReviewed": "@ago:2151.65",
+    "source": "seed",
+    "fileName": "fryer-oil-filtering-change-schedule.pdf",
+    "fileKind": "pdf",
+    "summary": "Filter nightly, test TPM daily, change at 24% TPM or every 4 service days.",
+    "tags": [
+      "fryer",
+      "oil",
+      "equipment",
+      "supply"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:2151.65",
+        "by": "CM-02",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:9117.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-002",
+    "title": "Allergen Handling & Station Separation",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:7917.65",
+    "lastReviewed": "@ago:591.65",
+    "source": "seed",
+    "fileName": "allergen-handling-station-separation.docx",
+    "fileKind": "docx",
+    "summary": "Purple boards and tools, dedicated fryer for gluten-free, ticket flag “ALLERGY”.",
+    "tags": [
+      "allergen",
+      "food-safety"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:591.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:7917.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-003",
+    "title": "Cooling Hot Foods (Two-Stage Cooling)",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:12477.65",
+    "lastReviewed": "@ago:5751.65",
+    "source": "seed",
+    "fileName": "cooling-hot-foods-two-stage-cooling.pdf",
+    "fileKind": "pdf",
+    "summary": "135°F → 70°F within 2 h, then 70°F → 41°F within a further 4 h (6 h total).",
+    "tags": [
+      "cooling",
+      "food-safety",
+      "blast-chiller",
+      "stock"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:5751.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:12477.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-004",
+    "title": "Walk-in Cooler Temperature Alarm Response",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:6957.65",
+    "lastReviewed": "@ago:2871.65",
+    "source": "upload",
+    "uploadedBy": "u-samuel",
+    "fileName": "walk-in-cooler-temperature-alarm-response.docx",
+    "fileKind": "docx",
+    "summary": "Alarm at 41°F: check door, log, move TCS food if above 41°F for 4 h.",
+    "tags": [
+      "walk-in",
+      "refrigeration",
+      "food-safety",
+      "equipment"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:2871.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:6957.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-005",
+    "title": "Grill Deep Clean & Degreasing",
+    "category": "sop",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:14637.65",
+    "lastReviewed": "@ago:7191.65",
+    "source": "seed",
+    "fileName": "grill-deep-clean-degreasing.pdf",
+    "fileKind": "pdf",
+    "summary": "Weekly degrease of grill, flat-top and hood filters; monthly hood service.",
+    "tags": [
+      "cleaning",
+      "grill",
+      "hood"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:7191.65",
+        "by": "CM-02",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:14637.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-SOP-006",
+    "title": "Dish Machine Sanitizer Checks",
+    "category": "sop",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "createdAt": "@ago:11277.65",
+    "lastReviewed": "@ago:4791.65",
+    "source": "seed",
+    "fileName": "dish-machine-sanitizer-checks.pdf",
+    "fileKind": "pdf",
+    "summary": "Chlorine 50–100 ppm; test at every shift start and after each chemical change.",
+    "tags": [
+      "dish",
+      "sanitizer",
+      "food-safety"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:4791.65",
+        "by": "CM-09",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:11277.65",
+        "by": "CM-09",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-001",
+    "title": "Incident: Walk-in Compressor Failure",
+    "category": "incident",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:9597.65",
+    "lastReviewed": "@ago:9591.65",
+    "source": "seed",
+    "fileName": "incident-walk-in-compressor-failure.pdf",
+    "fileKind": "pdf",
+    "summary": "Compressor failed overnight; 180 lb of product discarded; vendor response 5 h.",
+    "tags": [
+      "walk-in",
+      "refrigeration",
+      "loss"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:9597.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-002",
+    "title": "Incident: Minor Burn at Fry Station",
+    "category": "incident",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:6237.65",
+    "lastReviewed": "@ago:6231.65",
+    "source": "seed",
+    "fileName": "incident-minor-burn-at-fry-station.docx",
+    "fileKind": "docx",
+    "summary": "Oil splash while carrying a pot of hot oil; first aid given; caddy purchased.",
+    "tags": [
+      "safety",
+      "fryer",
+      "injury"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:6237.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-003",
+    "title": "Incident: Allergen Near-Miss, Table 12",
+    "category": "incident",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "createdAt": "@ago:2157.65",
+    "lastReviewed": "@ago:2151.65",
+    "source": "seed",
+    "fileName": "incident-allergen-near-miss-table-12.pdf",
+    "fileKind": "pdf",
+    "summary": "Tree-nut garnish nearly served to an allergic guest; caught by expo.",
+    "tags": [
+      "allergen",
+      "near-miss"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:2157.65",
+        "by": "CM-09",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-004",
+    "title": "Incident: Blast Chiller Temperature Excursion",
+    "category": "incident",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:237.65",
+    "lastReviewed": "@ago:231.65",
+    "source": "seed",
+    "fileName": "incident-blast-chiller-temperature-excursion.pdf",
+    "fileKind": "pdf",
+    "summary": "Chili batch reached only 88°F at the 2 h check; reheated to 165°F and re-cooled.",
+    "tags": [
+      "blast-chiller",
+      "cooling",
+      "food-safety"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:237.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-005",
+    "title": "Incident: Slip in Dish Pit",
+    "category": "incident",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "createdAt": "@ago:11997.65",
+    "lastReviewed": "@ago:11991.65",
+    "source": "seed",
+    "fileName": "incident-slip-in-dish-pit.docx",
+    "fileKind": "docx",
+    "summary": "Dishwasher slipped on a wet floor; anti-slip mats installed.",
+    "tags": [
+      "safety",
+      "dish"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:11997.65",
+        "by": "CM-09",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-INC-006",
+    "title": "Incident: Fryer Oil Delivery Short",
+    "category": "incident",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:117.65",
+    "lastReviewed": "@ago:111.65",
+    "source": "upload",
+    "uploadedBy": "u-priya",
+    "fileName": "incident-fryer-oil-delivery-short.jpg",
+    "fileKind": "jpg",
+    "summary": "Delivery arrived with 2 of 6 cases of frying oil; stock now below par.",
+    "tags": [
+      "supply",
+      "fryer",
+      "oil"
+    ],
+    "version": 1,
+    "reviewHistory": [
+      {
+        "at": "@ago:117.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-001",
+    "title": "Knife Safety & Handling",
+    "category": "onboarding",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:10797.65",
+    "lastReviewed": "@ago:1191.65",
+    "source": "seed",
+    "fileName": "knife-safety-handling.pptx",
+    "fileKind": "pptx",
+    "summary": "Claw grip, damp towel under boards, never catch a falling knife.",
+    "tags": [
+      "onboarding",
+      "safety",
+      "knives"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:1191.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:10797.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-002",
+    "title": "Grill Station Orientation",
+    "category": "onboarding",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "createdAt": "@ago:12957.65",
+    "lastReviewed": "@ago:4551.65",
+    "source": "seed",
+    "fileName": "grill-station-orientation.pdf",
+    "fileKind": "pdf",
+    "summary": "Station map, heat zones, ticket flow and mise en place for new grill cooks.",
+    "tags": [
+      "onboarding",
+      "grill"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:4551.65",
+        "by": "CM-02",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:12957.65",
+        "by": "CM-02",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-003",
+    "title": "Pastry Station Orientation",
+    "category": "onboarding",
+    "station": "pastry",
+    "ownerId": "CM-04",
+    "createdAt": "@ago:7917.65",
+    "lastReviewed": "@ago:1671.65",
+    "source": "seed",
+    "fileName": "pastry-station-orientation.pdf",
+    "fileKind": "pdf",
+    "summary": "Scales, allergen trays, proofer and oven schedule for new pastry cooks.",
+    "tags": [
+      "onboarding",
+      "pastry"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:1671.65",
+        "by": "CM-04",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:7917.65",
+        "by": "CM-04",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-004",
+    "title": "Front of House Service Standards",
+    "category": "onboarding",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "createdAt": "@ago:8637.65",
+    "lastReviewed": "@ago:2391.65",
+    "source": "seed",
+    "fileName": "front-of-house-service-standards.docx",
+    "fileKind": "docx",
+    "summary": "Greeting within 60 s, allergy question at every table, expo etiquette.",
+    "tags": [
+      "onboarding",
+      "foh",
+      "allergen"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:2391.65",
+        "by": "CM-09",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:8637.65",
+        "by": "CM-09",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-005",
+    "title": "Food Safety Basics: Temperature Danger Zone",
+    "category": "onboarding",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "@ago:9837.65",
+    "lastReviewed": "@ago:831.65",
+    "source": "seed",
+    "fileName": "food-safety-basics-temperature-danger-zone.md",
+    "fileKind": "md",
+    "summary": "Danger zone 41–135°F; cold holding ≤ 41°F; hot holding ≥ 135°F; reheat to 165°F.",
+    "tags": [
+      "onboarding",
+      "food-safety",
+      "temperatures"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:831.65",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:9837.65",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ]
+  },
+  {
+    "id": "DOC-ONB-006",
+    "title": "Opening & Closing Checklists",
+    "category": "onboarding",
+    "station": "foh",
+    "ownerId": "CM-11",
+    "createdAt": "@ago:4797.65",
+    "lastReviewed": "@ago:351.65",
+    "source": "upload",
+    "uploadedBy": "u-elena",
+    "fileName": "opening-closing-checklists.xlsx",
+    "fileKind": "xlsx",
+    "summary": "Per-station checklists for opening and closing, including temperature logs.",
+    "tags": [
+      "onboarding",
+      "checklist"
+    ],
+    "version": 2,
+    "reviewHistory": [
+      {
+        "at": "@ago:351.65",
+        "by": "CM-11",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "@ago:4797.65",
+        "by": "CM-11",
+        "note": "Initial version published"
+      }
+    ]
+  }
+]

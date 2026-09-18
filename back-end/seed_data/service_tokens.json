@@ -1,0 +1,52 @@
+[
+  {
+    "id": "tok-1",
+    "name": "claude-desktop-elena",
+    "client": "Claude Desktop (KM laptop)",
+    "scopes": [
+      "mcp:read",
+      "mcp:write"
+    ],
+    "createdAt": "@ago:956.65",
+    "lastUsed": "@ago:20.00",
+    "expiresAt": "@ago:-1202.35",
+    "revoked": false
+  },
+  {
+    "id": "tok-2",
+    "name": "ci-evals",
+    "client": "CI evaluation job",
+    "scopes": [
+      "mcp:read"
+    ],
+    "createdAt": "@ago:2156.65",
+    "lastUsed": "@ago:9.00",
+    "expiresAt": "@ago:-2.35",
+    "revoked": false
+  },
+  {
+    "id": "tok-3",
+    "name": "ops-dashboard",
+    "client": "Ops TV dashboard",
+    "scopes": [
+      "mcp:read"
+    ],
+    "createdAt": "@ago:2876.65",
+    "lastUsed": "@ago:740.65",
+    "expiresAt": "@ago:-1442.35",
+    "revoked": false
+  },
+  {
+    "id": "tok-4",
+    "name": "old-zapier",
+    "client": "Zapier (legacy)",
+    "scopes": [
+      "mcp:read",
+      "mcp:write"
+    ],
+    "createdAt": "@ago:7196.65",
+    "lastUsed": "@ago:3596.65",
+    "expiresAt": "@ago:236.65",
+    "revoked": true
+  }
+]

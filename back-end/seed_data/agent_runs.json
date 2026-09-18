@@ -1,0 +1,722 @@
+[
+  {
+    "id": "run-ask-1187",
+    "graph": "ask",
+    "userId": "u-samuel",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "@ago:2.00",
+    "tokensIn": 2140,
+    "tokensOut": 412,
+    "status": "interrupted",
+    "question": "Blast chiller still E4 — what do we do with tonight's stock?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 180,
+        "status": "success",
+        "input": {
+          "question": "Blast chiller still E4…"
+        },
+        "output": {
+          "intent": "procedure+action",
+          "tools_needed": [
+            "escalate_incident"
+          ]
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 180,
+        "durationMs": 240,
+        "status": "success",
+        "input": {
+          "query": "cool stock without blast chiller",
+          "k": 4
+        },
+        "output": {
+          "hits": [
+            "DOC-SOP-003",
+            "DOC-INC-004",
+            "DOC-REC-005"
+          ]
+        }
+      },
+      {
+        "node": "grade_documents",
+        "startedMs": 420,
+        "durationMs": 410,
+        "status": "success",
+        "input": {
+          "hits": 3
+        },
+        "output": {
+          "relevant": [
+            "DOC-SOP-003",
+            "DOC-REC-005"
+          ],
+          "dropped": [
+            "DOC-INC-004"
+          ]
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 830,
+        "durationMs": 3900,
+        "status": "success",
+        "input": {
+          "context_tokens": 1620,
+          "reasoning": true
+        },
+        "output": {
+          "answer_tokens": 380,
+          "citations": 2
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 4730,
+        "durationMs": 60,
+        "status": "success",
+        "input": {
+          "citations": 2
+        },
+        "output": {
+          "stale": [
+            "DOC-SOP-003"
+          ]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 4790,
+        "durationMs": 0,
+        "status": "interrupted",
+        "input": {
+          "tool": "escalate_incident",
+          "ticket_id": "TKT-017"
+        },
+        "output": {
+          "approval_id": "APR-105",
+          "waiting_for": "kitchen_manager"
+        }
+      }
+    ],
+    "durationMs": 4790
+  },
+  {
+    "id": "run-triage-0931",
+    "graph": "triage",
+    "userId": "u-priya",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "@ago:5.00",
+    "tokensIn": 6120,
+    "tokensOut": 980,
+    "status": "interrupted",
+    "nodes": [
+      {
+        "node": "load_tickets",
+        "startedMs": 0,
+        "durationMs": 90,
+        "status": "success",
+        "input": {
+          "station": "grill",
+          "statuses": [
+            "open",
+            "in_progress",
+            "blocked"
+          ]
+        },
+        "output": {
+          "tickets": 8
+        }
+      },
+      {
+        "node": "rank",
+        "startedMs": 90,
+        "durationMs": 150,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "top": [
+            "TKT-001",
+            "TKT-005",
+            "TKT-009"
+          ]
+        }
+      },
+      {
+        "node": "enrich_with_docs",
+        "startedMs": 240,
+        "durationMs": 520,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "linked_docs": 4,
+          "stale_docs": 1,
+          "roster": "Fri dinner 2/4"
+        }
+      },
+      {
+        "node": "detect_risks",
+        "startedMs": 760,
+        "durationMs": 340,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "risks": [
+            "shortage:TKT-005",
+            "mismatch:TKT-009",
+            "staffing:TKT-014"
+          ]
+        }
+      },
+      {
+        "node": "summarize",
+        "startedMs": 1100,
+        "durationMs": 5200,
+        "status": "success",
+        "input": {
+          "reasoning": true
+        },
+        "output": {
+          "summary_tokens": 610
+        }
+      },
+      {
+        "node": "propose_actions",
+        "startedMs": 6300,
+        "durationMs": 700,
+        "status": "success",
+        "input": {},
+        "output": {
+          "proposals": [
+            "draft_supply_order"
+          ]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 7000,
+        "durationMs": 0,
+        "status": "interrupted",
+        "input": {
+          "tool": "draft_supply_order",
+          "quantity": 6
+        },
+        "output": {
+          "approval_id": "APR-104"
+        }
+      }
+    ],
+    "durationMs": 7000
+  },
+  {
+    "id": "run-ask-1180",
+    "graph": "ask",
+    "userId": "u-marco",
+    "model": "llama3.2:3b",
+    "startedAt": "@ago:7.00",
+    "tokensIn": 1450,
+    "tokensOut": 260,
+    "status": "success",
+    "question": "How often do we change the fryer oil?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 120,
+        "status": "success",
+        "input": {
+          "question": "How often do we change the fryer oil?"
+        },
+        "output": {
+          "intent": "procedure"
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 120,
+        "durationMs": 210,
+        "status": "success",
+        "input": {
+          "query": "fryer oil change schedule",
+          "k": 4
+        },
+        "output": {
+          "hits": [
+            "DOC-SOP-001",
+            "DOC-INC-002",
+            "DOC-REC-002"
+          ]
+        }
+      },
+      {
+        "node": "grade_documents",
+        "startedMs": 330,
+        "durationMs": 300,
+        "status": "success",
+        "input": {
+          "hits": 3,
+          "role_filter": "line_cook"
+        },
+        "output": {
+          "relevant": [
+            "DOC-SOP-001",
+            "DOC-REC-002"
+          ],
+          "hidden_by_role": [
+            "DOC-INC-002"
+          ]
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 630,
+        "durationMs": 1800,
+        "status": "success",
+        "input": {
+          "context_tokens": 980,
+          "reasoning": false
+        },
+        "output": {
+          "answer_tokens": 240,
+          "citations": 2
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 2430,
+        "durationMs": 40,
+        "status": "success",
+        "input": {
+          "citations": 2
+        },
+        "output": {
+          "stale": []
+        }
+      }
+    ],
+    "durationMs": 2470
+  },
+  {
+    "id": "run-ask-1174",
+    "graph": "ask",
+    "userId": "u-elena",
+    "model": "gemma4:e2b",
+    "startedAt": "@ago:20.00",
+    "tokensIn": 1900,
+    "tokensOut": 520,
+    "status": "success",
+    "question": "Which SOPs are out of date?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 140,
+        "status": "success",
+        "input": {
+          "question": "Which SOPs are out of date?"
+        },
+        "output": {
+          "intent": "audit",
+          "route": "stale_audit_tool"
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 140,
+        "durationMs": 90,
+        "status": "skipped",
+        "input": {},
+        "output": {
+          "reason": "answered by tool"
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 230,
+        "durationMs": 4100,
+        "status": "success",
+        "input": {
+          "tool_result_rows": 5
+        },
+        "output": {
+          "answer_tokens": 490
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 4330,
+        "durationMs": 50,
+        "status": "success",
+        "input": {
+          "citations": 5
+        },
+        "output": {
+          "stale": 5
+        }
+      }
+    ],
+    "durationMs": 4380
+  },
+  {
+    "id": "run-ask-1169",
+    "graph": "ask",
+    "userId": "u-admin",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "@ago:22.98",
+    "tokensIn": 1320,
+    "tokensOut": 1680,
+    "status": "success",
+    "question": "How do I cool a stockpot of chili safely?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 150,
+        "status": "success",
+        "input": {
+          "question": "How do I cool a stockpot of chili safely?"
+        },
+        "output": {
+          "intent": "procedure"
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 150,
+        "durationMs": 230,
+        "status": "success",
+        "input": {
+          "query": "cool stockpot chili",
+          "k": 4
+        },
+        "output": {
+          "hits": [
+            "DOC-SOP-003",
+            "DOC-ONB-005",
+            "DOC-REC-005"
+          ]
+        }
+      },
+      {
+        "node": "grade_documents",
+        "startedMs": 380,
+        "durationMs": 460,
+        "status": "success",
+        "input": {
+          "hits": 3
+        },
+        "output": {
+          "relevant": [
+            "DOC-SOP-003",
+            "DOC-ONB-005"
+          ]
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 840,
+        "durationMs": 11800,
+        "status": "success",
+        "input": {
+          "context_tokens": 1100,
+          "reasoning": "always"
+        },
+        "output": {
+          "reasoning_tokens": 1210,
+          "answer_tokens": 430
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 12640,
+        "durationMs": 60,
+        "status": "success",
+        "input": {
+          "citations": 2
+        },
+        "output": {
+          "stale": [
+            "DOC-SOP-003"
+          ]
+        }
+      }
+    ],
+    "durationMs": 12700
+  },
+  {
+    "id": "run-triage-0915",
+    "graph": "triage",
+    "userId": "u-priya",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "@ago:213.98",
+    "tokensIn": 5400,
+    "tokensOut": 870,
+    "status": "success",
+    "nodes": [
+      {
+        "node": "load_tickets",
+        "startedMs": 0,
+        "durationMs": 80,
+        "status": "success",
+        "input": {
+          "station": "grill"
+        },
+        "output": {
+          "tickets": 7
+        }
+      },
+      {
+        "node": "rank",
+        "startedMs": 80,
+        "durationMs": 140,
+        "status": "success",
+        "input": {
+          "tickets": 7
+        },
+        "output": {
+          "top": [
+            "TKT-008",
+            "TKT-010"
+          ]
+        }
+      },
+      {
+        "node": "enrich_with_docs",
+        "startedMs": 220,
+        "durationMs": 480,
+        "status": "success",
+        "input": {},
+        "output": {
+          "linked_docs": 3
+        }
+      },
+      {
+        "node": "detect_risks",
+        "startedMs": 700,
+        "durationMs": 300,
+        "status": "success",
+        "input": {},
+        "output": {
+          "risks": [
+            "shortage:TKT-023"
+          ]
+        }
+      },
+      {
+        "node": "summarize",
+        "startedMs": 1000,
+        "durationMs": 4700,
+        "status": "success",
+        "input": {},
+        "output": {
+          "summary_tokens": 540
+        }
+      },
+      {
+        "node": "propose_actions",
+        "startedMs": 5700,
+        "durationMs": 600,
+        "status": "success",
+        "input": {},
+        "output": {
+          "proposals": [
+            "draft_supply_order"
+          ]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 6300,
+        "durationMs": 0,
+        "status": "success",
+        "input": {
+          "approval_id": "APR-102"
+        },
+        "output": {
+          "decision": "rejected"
+        }
+      }
+    ],
+    "durationMs": 6300
+  },
+  {
+    "id": "run-ask-1150",
+    "graph": "ask",
+    "userId": "u-samuel",
+    "model": "llama3.2:3b",
+    "startedAt": "@ago:40.98",
+    "tokensIn": 900,
+    "tokensOut": 0,
+    "status": "error",
+    "question": "Summarise the proofer manual",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 110,
+        "status": "success",
+        "input": {
+          "question": "Summarise the proofer manual"
+        },
+        "output": {
+          "intent": "summarise"
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 110,
+        "durationMs": 200,
+        "status": "success",
+        "input": {
+          "query": "proofer manual"
+        },
+        "output": {
+          "hits": []
+        }
+      },
+      {
+        "node": "rewrite_query",
+        "startedMs": 310,
+        "durationMs": 650,
+        "status": "success",
+        "input": {
+          "attempt": 1
+        },
+        "output": {
+          "query": "proofer temperature humidity settings"
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 960,
+        "durationMs": 190,
+        "status": "success",
+        "input": {
+          "query": "proofer temperature humidity settings"
+        },
+        "output": {
+          "hits": [
+            "DOC-REC-004"
+          ]
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 1150,
+        "durationMs": 30000,
+        "status": "error",
+        "input": {
+          "context_tokens": 620
+        },
+        "output": {
+          "error": "Ollama request timed out after 30 s (model was loading)"
+        }
+      }
+    ],
+    "durationMs": 31150
+  },
+  {
+    "id": "run-triage-0902",
+    "graph": "triage",
+    "userId": "u-samuel",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "@ago:358.98",
+    "tokensIn": 4800,
+    "tokensOut": 760,
+    "status": "success",
+    "nodes": [
+      {
+        "node": "load_tickets",
+        "startedMs": 0,
+        "durationMs": 70,
+        "status": "success",
+        "input": {
+          "station": "prep"
+        },
+        "output": {
+          "tickets": 6
+        }
+      },
+      {
+        "node": "rank",
+        "startedMs": 70,
+        "durationMs": 120,
+        "status": "success",
+        "input": {},
+        "output": {
+          "top": [
+            "TKT-035"
+          ]
+        }
+      },
+      {
+        "node": "enrich_with_docs",
+        "startedMs": 190,
+        "durationMs": 450,
+        "status": "success",
+        "input": {},
+        "output": {
+          "linked_docs": 3,
+          "stale_docs": 1
+        }
+      },
+      {
+        "node": "detect_risks",
+        "startedMs": 640,
+        "durationMs": 280,
+        "status": "success",
+        "input": {},
+        "output": {
+          "risks": [
+            "mismatch:TKT-035"
+          ]
+        }
+      },
+      {
+        "node": "summarize",
+        "startedMs": 920,
+        "durationMs": 4300,
+        "status": "success",
+        "input": {},
+        "output": {
+          "summary_tokens": 500
+        }
+      },
+      {
+        "node": "propose_actions",
+        "startedMs": 5220,
+        "durationMs": 520,
+        "status": "success",
+        "input": {},
+        "output": {
+          "proposals": [
+            "reassign_ticket"
+          ]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 5740,
+        "durationMs": 0,
+        "status": "success",
+        "input": {
+          "approval_id": "APR-101"
+        },
+        "output": {
+          "decision": "approved"
+        }
+      }
+    ],
+    "durationMs": 5740
+  }
+]

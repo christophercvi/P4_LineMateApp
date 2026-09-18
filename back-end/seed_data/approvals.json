@@ -1,0 +1,107 @@
+[
+  {
+    "id": "APR-104",
+    "kind": "draft_supply_order",
+    "status": "pending",
+    "title": "Order 6 cases of canola frying oil",
+    "summary": "Stock is 1 case (par 4) after a short delivery. Needed before Saturday dinner.",
+    "requestedBy": "u-priya",
+    "requestedAt": "@ago:5.00",
+    "runId": "run-triage-0931",
+    "payload": {
+      "supplier": "Coastal Restaurant Supply",
+      "item": "Canola frying oil, 35 lb",
+      "sku": "CAN-OIL-35",
+      "quantity": 6,
+      "unit": "case",
+      "unitPrice": 42.5,
+      "neededBy": "@agod:-2",
+      "ticketId": "TKT-005"
+    }
+  },
+  {
+    "id": "APR-105",
+    "kind": "escalate_incident",
+    "status": "pending",
+    "title": "Escalate TKT-017 as a food-safety incident",
+    "summary": "Blast chiller failing stage-1 cooling for 9 days; assigned outside the owning station.",
+    "requestedBy": "u-samuel",
+    "requestedAt": "@ago:2.00",
+    "runId": "run-ask-1187",
+    "payload": {
+      "ticketId": "TKT-017",
+      "severity": "food_safety",
+      "notify": [
+        "CM-11",
+        "CM-06"
+      ],
+      "holdProduct": true,
+      "note": "Approve emergency vendor call-out ($450)."
+    }
+  },
+  {
+    "id": "APR-101",
+    "kind": "reassign_ticket",
+    "status": "approved",
+    "title": "Reassign TKT-035 to Prep",
+    "summary": "Cooling-log ticket owned by Prep was assigned to a Grill cook.",
+    "requestedBy": "u-samuel",
+    "requestedAt": "@ago:357.65",
+    "runId": "run-triage-0902",
+    "payload": {
+      "ticketId": "TKT-035",
+      "fromAssigneeId": "CM-01",
+      "toAssigneeId": "CM-06",
+      "reason": "Document owner station is Prep"
+    },
+    "decidedBy": "u-elena",
+    "decidedAt": "@ago:355.65",
+    "reason": "Agreed — prep owns the cooling log."
+  },
+  {
+    "id": "APR-102",
+    "kind": "draft_supply_order",
+    "status": "rejected",
+    "title": "Order 4 cases of piping bags",
+    "summary": "Pastry is low on 18-in piping bags.",
+    "requestedBy": "u-priya",
+    "requestedAt": "@ago:212.65",
+    "runId": "run-triage-0915",
+    "payload": {
+      "supplier": "Coastal Restaurant Supply",
+      "item": "Disposable piping bags 18 in (100)",
+      "sku": "PB-18-100",
+      "quantity": 4,
+      "unit": "case",
+      "unitPrice": 31,
+      "neededBy": "@agod:6",
+      "ticketId": "TKT-023"
+    },
+    "decidedBy": "u-elena",
+    "decidedAt": "@ago:210.65",
+    "reason": "One case is enough — we have a backup box in dry storage."
+  },
+  {
+    "id": "APR-103",
+    "kind": "escalate_incident",
+    "status": "approved",
+    "title": "Escalate TKT-034 guest reaction",
+    "summary": "Sesame reaction at table 7.",
+    "requestedBy": "u-elena",
+    "requestedAt": "@ago:465.65",
+    "runId": "run-ask-1102",
+    "payload": {
+      "ticketId": "TKT-034",
+      "severity": "food_safety",
+      "notify": [
+        "CM-11",
+        "CM-09"
+      ],
+      "holdProduct": false,
+      "note": "Guest OK; review allergen matrix."
+    },
+    "decidedBy": "u-elena",
+    "decidedAt": "@ago:465.65",
+    "reason": "Self-approved as KM on duty."
+  }
+]

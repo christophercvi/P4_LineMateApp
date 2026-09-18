@@ -1,0 +1,321 @@
+[
+  {
+    "name": "search_documents",
+    "access": "read",
+    "requiresApproval": false,
+    "callsLast7d": 184,
+    "roles": [
+      "line_cook",
+      "sous_chef",
+      "kitchen_manager",
+      "admin",
+      "service"
+    ],
+    "description": "Semantic search over the kitchen knowledge base. Results are filtered by the caller's role (Incident Reports hidden from line cooks).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Natural-language question"
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "recipe",
+            "sop",
+            "incident",
+            "onboarding"
+          ]
+        },
+        "station": {
+          "type": "string",
+          "enum": [
+            "grill",
+            "pastry",
+            "prep",
+            "foh"
+          ]
+        },
+        "k": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "default": 4
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "sampleInput": {
+      "query": "how fast must a stockpot cool",
+      "k": 2
+    },
+    "sampleOutput": [
+      {
+        "doc_id": "DOC-SOP-003",
+        "title": "Cooling Hot Foods (Two-Stage Cooling)",
+        "score": 0.82,
+        "last_reviewed_days": 240,
+        "stale": true
+      },
+      {
+        "doc_id": "DOC-ONB-005",
+        "title": "Food Safety Basics: Temperature Danger Zone",
+        "score": 0.71,
+        "last_reviewed_days": 35,
+        "stale": false
+      }
+    ]
+  },
+  {
+    "name": "list_open_tickets",
+    "access": "read",
+    "requiresApproval": false,
+    "callsLast7d": 96,
+    "roles": [
+      "sous_chef",
+      "kitchen_manager",
+      "admin",
+      "service"
+    ],
+    "description": "Open tickets with priority, station, assignee and linked document. Sous chefs only see their own station.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "station": {
+          "type": "string",
+          "enum": [
+            "grill",
+            "pastry",
+            "prep",
+            "foh"
+          ]
+        },
+        "min_priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "limit": {
+          "type": "integer",
+          "default": 20
+        }
+      }
+    },
+    "sampleInput": {
+      "min_priority": "critical"
+    },
+    "sampleOutput": [
+      {
+        "id": "TKT-001",
+        "title": "Hood suppression inspection overdue after flare-up on grill #1",
+        "station": "grill",
+        "assignee": "CM-02"
+      },
+      {
+        "id": "TKT-017",
+        "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+        "station": "prep",
+        "assignee": "CM-10"
+      }
+    ]
+  },
+  {
+    "name": "workload_analytics",
+    "access": "read",
+    "requiresApproval": false,
+    "callsLast7d": 41,
+    "roles": [
+      "sous_chef",
+      "kitchen_manager",
+      "admin",
+      "service"
+    ],
+    "description": "Open-ticket counts per station and priority, with a load index relative to the station mean.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "include_resolved": {
+          "type": "boolean",
+          "default": false
+        }
+      }
+    },
+    "sampleInput": {},
+    "sampleOutput": {
+      "grill": {
+        "open": 8,
+        "load_index": 1.6,
+        "flagged": true
+      },
+      "prep": {
+        "open": 6,
+        "load_index": 1.2
+      }
+    }
+  },
+  {
+    "name": "create_ticket",
+    "access": "write",
+    "requiresApproval": true,
+    "callsLast7d": 12,
+    "roles": [
+      "line_cook",
+      "sous_chef",
+      "kitchen_manager",
+      "service"
+    ],
+    "description": "Opens a ticket. From the web app it is immediate; from an external MCP client it pauses for Kitchen Manager approval.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "maxLength": 140
+        },
+        "description": {
+          "type": "string"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "station": {
+          "type": "string",
+          "enum": [
+            "grill",
+            "pastry",
+            "prep",
+            "foh"
+          ]
+        },
+        "related_doc_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "priority",
+        "station"
+      ]
+    },
+    "sampleInput": {
+      "title": "Ice machine leaking",
+      "priority": "medium",
+      "station": "prep"
+    },
+    "sampleOutput": {
+      "id": "TKT-041",
+      "status": "open"
+    }
+  },
+  {
+    "name": "draft_supply_order",
+    "access": "write",
+    "requiresApproval": true,
+    "callsLast7d": 3,
+    "roles": [
+      "sous_chef",
+      "kitchen_manager",
+      "service"
+    ],
+    "description": "Drafts a purchase order with a supplier. Pauses the graph (interrupt) until a Kitchen Manager approves.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "supplier": {
+          "type": "string"
+        },
+        "sku": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "needed_by": {
+          "type": "string",
+          "format": "date"
+        },
+        "ticket_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "supplier",
+        "sku",
+        "quantity"
+      ]
+    },
+    "sampleInput": {
+      "supplier": "Coastal Restaurant Supply",
+      "sku": "CAN-OIL-35",
+      "quantity": 6,
+      "ticket_id": "TKT-005"
+    },
+    "sampleOutput": {
+      "status": "interrupted",
+      "approval_id": "APR-104",
+      "waiting_for": "kitchen_manager"
+    }
+  },
+  {
+    "name": "escalate_incident",
+    "access": "write",
+    "requiresApproval": true,
+    "callsLast7d": 2,
+    "roles": [
+      "sous_chef",
+      "kitchen_manager",
+      "service"
+    ],
+    "description": "Escalates a ticket to a food-safety incident: notifies the KM and owner, can place a product hold. Requires approval.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "ticket_id": {
+          "type": "string"
+        },
+        "severity": {
+          "type": "string",
+          "enum": [
+            "food_safety",
+            "equipment",
+            "staffing"
+          ]
+        },
+        "hold_product": {
+          "type": "boolean"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ticket_id",
+        "severity"
+      ]
+    },
+    "sampleInput": {
+      "ticket_id": "TKT-017",
+      "severity": "food_safety",
+      "hold_product": true
+    },
+    "sampleOutput": {
+      "status": "interrupted",
+      "approval_id": "APR-105",
+      "waiting_for": "kitchen_manager"
+    }
+  }
+]

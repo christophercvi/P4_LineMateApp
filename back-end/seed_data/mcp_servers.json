@@ -1,0 +1,44 @@
+[
+  {
+    "id": "shift-scheduler",
+    "name": "Shift Scheduler",
+    "url": "https://mcp.shiftboard.example/mcp",
+    "transport": "streamable-http",
+    "status": "connected",
+    "lastSeen": "@ago:0.10",
+    "latencyMs": 180,
+    "tools": [
+      {
+        "name": "get_roster",
+        "description": "Who is scheduled per station and shift",
+        "usedBy": "triage → enrich_with_docs"
+      },
+      {
+        "name": "find_cover",
+        "description": "Crew available to cover a shift",
+        "usedBy": "triage → propose_actions"
+      }
+    ]
+  },
+  {
+    "id": "supplier-inventory",
+    "name": "Supplier Inventory",
+    "url": "https://mcp.coastalsupply.example/mcp",
+    "transport": "streamable-http",
+    "status": "degraded",
+    "lastSeen": "@ago:0.40",
+    "latencyMs": 2350,
+    "tools": [
+      {
+        "name": "check_stock",
+        "description": "Stock and lead time for a SKU",
+        "usedBy": "triage → detect_risks"
+      },
+      {
+        "name": "price_quote",
+        "description": "Current case price for a SKU",
+        "usedBy": "draft_supply_order"
+      }
+    ]
+  }
+]

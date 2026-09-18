@@ -1,0 +1,41 @@
+[
+  {
+    "id": "ATT-1",
+    "ticketId": "TKT-017",
+    "name": "blast-chiller-e4.jpg",
+    "kind": "jpg",
+    "bytes": 1204000,
+    "url": "/seed-files/blast-chiller-e4.jpg",
+    "uploadedBy": "CM-06",
+    "uploadedAt": "@ago:208.65"
+  },
+  {
+    "id": "ATT-2",
+    "ticketId": "TKT-017",
+    "name": "chiller-service-log.pdf",
+    "kind": "pdf",
+    "bytes": 182300,
+    "uploadedBy": "CM-06",
+    "uploadedAt": "@ago:189.65"
+  },
+  {
+    "id": "ATT-3",
+    "ticketId": "TKT-005",
+    "name": "fryer-oil-tuesday.jpg",
+    "kind": "jpg",
+    "bytes": 968000,
+    "url": "/seed-files/fryer-oil.jpg",
+    "uploadedBy": "CM-03",
+    "uploadedAt": "@ago:86.65"
+  },
+  {
+    "id": "ATT-4",
+    "ticketId": "TKT-020",
+    "name": "walk-in-shelf-6am.jpg",
+    "kind": "jpg",
+    "bytes": 1080000,
+    "url": "/seed-files/walk-in-shelf.jpg",
+    "uploadedBy": "CM-08",
+    "uploadedAt": "@ago:24.65"
+  }
+]

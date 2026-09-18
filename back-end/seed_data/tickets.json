@@ -1,0 +1,664 @@
+[
+  {
+    "id": "TKT-001",
+    "title": "Hood suppression inspection overdue after flare-up on grill #1",
+    "description": "Grease flare-up reached the hood on grill #1 during Saturday service. The suppression inspection sticker expired last month. Vendor needs to inspect before Friday; until then no high-flame searing on grill #1.",
+    "priority": "critical",
+    "status": "in_progress",
+    "station": "grill",
+    "assigneeId": "CM-02",
+    "reporterId": "CM-01",
+    "relatedDocId": "DOC-SOP-005",
+    "createdAt": "@ago:46.53",
+    "updatedAt": "@ago:3.00",
+    "tags": [
+      "safety",
+      "hood"
+    ]
+  },
+  {
+    "id": "TKT-002",
+    "title": "Grill #2 igniter replaced",
+    "description": "Igniter clicking but not lighting. Replaced by vendor.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "grill",
+    "assigneeId": "CM-03",
+    "reporterId": "CM-01",
+    "relatedDocId": null,
+    "createdAt": "@ago:597.42",
+    "updatedAt": "@ago:500.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-003",
+    "title": "Walk-in door closer broken",
+    "description": "Door does not close on its own. Closer replaced.",
+    "priority": "high",
+    "status": "closed",
+    "station": "prep",
+    "assigneeId": "CM-06",
+    "reporterId": "CM-07",
+    "relatedDocId": "DOC-SOP-004",
+    "createdAt": "@ago:956.30",
+    "updatedAt": "@ago:900.00",
+    "tags": [
+      "walk-in"
+    ]
+  },
+  {
+    "id": "TKT-004",
+    "title": "Stand mixer paddle cracked",
+    "description": "Crack near the shaft; replacement paddle ordered and installed.",
+    "priority": "low",
+    "status": "resolved",
+    "station": "pastry",
+    "assigneeId": "CM-05",
+    "reporterId": "CM-04",
+    "relatedDocId": null,
+    "createdAt": "@ago:787.18",
+    "updatedAt": "@ago:700.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-005",
+    "title": "Fryer oil down to 1 case — delivery was short",
+    "description": "Harbor Foodservice delivered 2 of 6 cases of canola frying oil. After the Wednesday change we have 1 case left; par is 4. We will run out by Saturday dinner without an order.",
+    "priority": "high",
+    "status": "open",
+    "station": "grill",
+    "assigneeId": "CM-02",
+    "reporterId": "CM-03",
+    "relatedDocId": "DOC-SOP-001",
+    "createdAt": "@ago:90.07",
+    "updatedAt": "@ago:5.00",
+    "tags": [
+      "supply",
+      "fryer"
+    ]
+  },
+  {
+    "id": "TKT-006",
+    "title": "POS modifier order — allergy on the top line",
+    "description": "Follow-up from the Table 12 near-miss.",
+    "priority": "medium",
+    "status": "closed",
+    "station": "foh",
+    "assigneeId": "CM-09",
+    "reporterId": "CM-09",
+    "relatedDocId": "DOC-INC-003",
+    "createdAt": "@ago:2032.95",
+    "updatedAt": "@ago:1900.00",
+    "tags": [
+      "allergen",
+      "pos"
+    ]
+  },
+  {
+    "id": "TKT-007",
+    "title": "Salamander slow to heat on the pass side",
+    "description": "Takes ~25 min to reach temp in the morning, used to be 10. Right burner looks weaker than the left.",
+    "priority": "medium",
+    "status": "open",
+    "station": "grill",
+    "assigneeId": "CM-03",
+    "reporterId": "CM-01",
+    "relatedDocId": null,
+    "createdAt": "@ago:135.83",
+    "updatedAt": "@ago:30.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-008",
+    "title": "Fryer #1 thermostat overshooting to 390°F",
+    "description": "Thermostat replaced; calibrated at 350°F.",
+    "priority": "high",
+    "status": "resolved",
+    "station": "grill",
+    "assigneeId": "CM-02",
+    "reporterId": "CM-03",
+    "relatedDocId": "DOC-SOP-001",
+    "createdAt": "@ago:1070.72",
+    "updatedAt": "@ago:1000.00",
+    "tags": [
+      "fryer",
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-009",
+    "title": "Fryer oil changes skipped two nights running",
+    "description": "Fryer log shows no change Monday or Tuesday; TPM read 27% this morning. Close checklist was signed anyway. Need to find out who is closing fry and retrain on the change schedule.",
+    "priority": "high",
+    "status": "open",
+    "station": "grill",
+    "assigneeId": "CM-09",
+    "reporterId": "CM-02",
+    "relatedDocId": "DOC-SOP-001",
+    "createdAt": "@ago:71.60",
+    "updatedAt": "@ago:8.00",
+    "tags": [
+      "fryer",
+      "process"
+    ]
+  },
+  {
+    "id": "TKT-010",
+    "title": "Grill ticket printer jams during rush",
+    "description": "Printer jams on long tickets (8+ items). Blocked: waiting on POS vendor to ship a replacement cutter.",
+    "priority": "medium",
+    "status": "blocked",
+    "station": "grill",
+    "assigneeId": "CM-01",
+    "reporterId": "CM-01",
+    "relatedDocId": null,
+    "createdAt": "@ago:214.48",
+    "updatedAt": "@ago:50.00",
+    "tags": [
+      "equipment",
+      "pos"
+    ]
+  },
+  {
+    "id": "TKT-011",
+    "title": "Missing sheet trays",
+    "description": "Found in the pastry rack; labelled by station.",
+    "priority": "low",
+    "status": "closed",
+    "station": "prep",
+    "assigneeId": "CM-08",
+    "reporterId": "CM-08",
+    "relatedDocId": null,
+    "createdAt": "@ago:1197.37",
+    "updatedAt": "@ago:1100.00",
+    "tags": [
+      "supply"
+    ]
+  },
+  {
+    "id": "TKT-012",
+    "title": "Flat-top has a cold spot front-left",
+    "description": "Front-left quarter of the flat-top reads 90°F lower than the rest. Burgers there are coming out under temp. Using the back half only for now.",
+    "priority": "high",
+    "status": "in_progress",
+    "station": "grill",
+    "assigneeId": "CM-03",
+    "reporterId": "CM-12",
+    "relatedDocId": "DOC-SOP-005",
+    "createdAt": "@ago:116.25",
+    "updatedAt": "@ago:20.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-013",
+    "title": "Ice machine output low",
+    "description": "Filter replaced, output back to spec.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "prep",
+    "assigneeId": "CM-07",
+    "reporterId": "CM-06",
+    "relatedDocId": null,
+    "createdAt": "@ago:667.13",
+    "updatedAt": "@ago:600.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-014",
+    "title": "Grill short-staffed for Friday dinner (2 of 4 cooks)",
+    "description": "Two grill cooks called out for Friday. Need two cover shifts or a reduced grill menu. Shift scheduler shows no one available yet.",
+    "priority": "high",
+    "status": "open",
+    "station": "grill",
+    "assigneeId": "CM-02",
+    "reporterId": "CM-02",
+    "relatedDocId": null,
+    "createdAt": "@ago:18.02",
+    "updatedAt": "@ago:4.00",
+    "tags": [
+      "staffing"
+    ]
+  },
+  {
+    "id": "TKT-015",
+    "title": "Replace worn grill brushes",
+    "description": "Two of three grill brushes are shedding bristles. Bristles on grates are a foreign-object hazard.",
+    "priority": "low",
+    "status": "open",
+    "station": "grill",
+    "assigneeId": "CM-12",
+    "reporterId": "CM-12",
+    "relatedDocId": "DOC-SOP-005",
+    "createdAt": "@ago:280.90",
+    "updatedAt": "@ago:200.00",
+    "tags": [
+      "supply",
+      "cleaning"
+    ]
+  },
+  {
+    "id": "TKT-016",
+    "title": "Update walk-in alarm contact list",
+    "description": "Alarm now pages the KM and both sous chefs.",
+    "priority": "high",
+    "status": "closed",
+    "station": "prep",
+    "assigneeId": "CM-11",
+    "reporterId": "CM-06",
+    "relatedDocId": "DOC-SOP-004",
+    "createdAt": "@ago:1311.78",
+    "updatedAt": "@ago:1250.00",
+    "tags": [
+      "walk-in",
+      "process"
+    ]
+  },
+  {
+    "id": "TKT-017",
+    "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+    "description": "Blast chiller shows error E4 and cannot bring a 6 gal chili batch below 70°F within 2 hours. Batch was reheated and re-cooled with ice wands. Until fixed, all cooling must use ice baths + ice wands in 2-in pans. Vendor visit needed.",
+    "priority": "critical",
+    "status": "in_progress",
+    "station": "prep",
+    "assigneeId": "CM-10",
+    "reporterId": "CM-06",
+    "relatedDocId": "DOC-SOP-003",
+    "createdAt": "@ago:206.67",
+    "updatedAt": "@ago:2.00",
+    "tags": [
+      "food-safety",
+      "blast-chiller",
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-018",
+    "title": "Label printer printing blank date field",
+    "description": "Day-dot labels print with the use-by date empty. Hand-writing dates for now.",
+    "priority": "medium",
+    "status": "open",
+    "station": "prep",
+    "assigneeId": "CM-08",
+    "reporterId": "CM-07",
+    "relatedDocId": null,
+    "createdAt": "@ago:167.55",
+    "updatedAt": "@ago:60.00",
+    "tags": [
+      "equipment",
+      "labels"
+    ]
+  },
+  {
+    "id": "TKT-019",
+    "title": "Charbroiler grates warped",
+    "description": "Two grates replaced.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "grill",
+    "assigneeId": "CM-01",
+    "reporterId": "CM-02",
+    "relatedDocId": null,
+    "createdAt": "@ago:526.43",
+    "updatedAt": "@ago:450.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-020",
+    "title": "Walk-in reading 43°F at 6 AM check",
+    "description": "Display 43°F, probe in the milk 42°F. Door closer is slow again. Product moved per the alarm SOP; vendor called.",
+    "priority": "high",
+    "status": "open",
+    "station": "prep",
+    "assigneeId": "CM-06",
+    "reporterId": "CM-08",
+    "relatedDocId": "DOC-SOP-004",
+    "createdAt": "@ago:21.32",
+    "updatedAt": "@ago:6.00",
+    "tags": [
+      "walk-in",
+      "food-safety"
+    ]
+  },
+  {
+    "id": "TKT-021",
+    "title": "Host stand tablet charger missing",
+    "description": "New charger mounted under the stand.",
+    "priority": "low",
+    "status": "resolved",
+    "station": "foh",
+    "assigneeId": "CM-10",
+    "reporterId": "CM-09",
+    "relatedDocId": null,
+    "createdAt": "@ago:428.20",
+    "updatedAt": "@ago:380.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-022",
+    "title": "Croissants over-proofing in the new proofer",
+    "description": "Since the proofer was replaced, croissants collapse at the 2 h mark. Recipe card still has the old proofer settings.",
+    "priority": "medium",
+    "status": "open",
+    "station": "pastry",
+    "assigneeId": "CM-07",
+    "reporterId": "CM-04",
+    "relatedDocId": "DOC-REC-004",
+    "createdAt": "@ago:187.08",
+    "updatedAt": "@ago:40.00",
+    "tags": [
+      "proofing",
+      "quality"
+    ]
+  },
+  {
+    "id": "TKT-023",
+    "title": "Order more disposable piping bags",
+    "description": "Down to half a box of 18-in bags.",
+    "priority": "low",
+    "status": "open",
+    "station": "pastry",
+    "assigneeId": "CM-05",
+    "reporterId": "CM-05",
+    "relatedDocId": null,
+    "createdAt": "@ago:233.97",
+    "updatedAt": "@ago:120.00",
+    "tags": [
+      "supply"
+    ]
+  },
+  {
+    "id": "TKT-024",
+    "title": "Vacuum sealer not sealing on one side",
+    "description": "Right side of the seal bar leaves an open corner. Heat strip may need replacing.",
+    "priority": "medium",
+    "status": "in_progress",
+    "station": "prep",
+    "assigneeId": "CM-07",
+    "reporterId": "CM-08",
+    "relatedDocId": null,
+    "createdAt": "@ago:256.85",
+    "updatedAt": "@ago:70.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-025",
+    "title": "Oven #3 hot spot back-right",
+    "description": "Financiers in the back-right position are dark on the bottom. Rotating trays at 6 min as a workaround.",
+    "priority": "medium",
+    "status": "open",
+    "station": "pastry",
+    "assigneeId": "CM-04",
+    "reporterId": "CM-05",
+    "relatedDocId": "DOC-ONB-003",
+    "createdAt": "@ago:135.73",
+    "updatedAt": "@ago:90.00",
+    "tags": [
+      "equipment",
+      "oven"
+    ]
+  },
+  {
+    "id": "TKT-026",
+    "title": "Colour codes on cutting boards worn off",
+    "description": "Several boards have lost their colour tabs, including one purple (allergen) board. Replace before the next audit.",
+    "priority": "low",
+    "status": "open",
+    "station": "prep",
+    "assigneeId": "CM-08",
+    "reporterId": "CM-06",
+    "relatedDocId": "DOC-SOP-002",
+    "createdAt": "@ago:327.62",
+    "updatedAt": "@ago:300.00",
+    "tags": [
+      "allergen",
+      "supply"
+    ]
+  },
+  {
+    "id": "TKT-027",
+    "title": "Proofer replaced — update settings card",
+    "description": "New proofer installed. Settings card on the door updated; recipe card still pending.",
+    "priority": "medium",
+    "status": "closed",
+    "station": "pastry",
+    "assigneeId": "CM-04",
+    "reporterId": "CM-11",
+    "relatedDocId": "DOC-REC-004",
+    "createdAt": "@ago:1679.50",
+    "updatedAt": "@ago:1600.00",
+    "tags": [
+      "proofing"
+    ]
+  },
+  {
+    "id": "TKT-028",
+    "title": "Chicken stock yield down to 26 qt",
+    "description": "Last three batches yielded 26–27 qt instead of 32. Suspect simmer too hard overnight.",
+    "priority": "medium",
+    "status": "open",
+    "station": "prep",
+    "assigneeId": "CM-06",
+    "reporterId": "CM-07",
+    "relatedDocId": "DOC-REC-005",
+    "createdAt": "@ago:70.38",
+    "updatedAt": "@ago:26.00",
+    "tags": [
+      "yield",
+      "cost"
+    ]
+  },
+  {
+    "id": "TKT-029",
+    "title": "Squeeze bottles cracked",
+    "description": "Replaced 12 bottles.",
+    "priority": "low",
+    "status": "closed",
+    "station": "grill",
+    "assigneeId": "CM-12",
+    "reporterId": "CM-01",
+    "relatedDocId": null,
+    "createdAt": "@ago:837.27",
+    "updatedAt": "@ago:780.00",
+    "tags": [
+      "supply"
+    ]
+  },
+  {
+    "id": "TKT-030",
+    "title": "Mandoline guard missing",
+    "description": "Guard found and re-attached with a tether.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "prep",
+    "assigneeId": "CM-07",
+    "reporterId": "CM-06",
+    "relatedDocId": "DOC-ONB-001",
+    "createdAt": "@ago:716.15",
+    "updatedAt": "@ago:650.00",
+    "tags": [
+      "safety",
+      "knives"
+    ]
+  },
+  {
+    "id": "TKT-031",
+    "title": "Dish machine sanitizer reading 30 ppm",
+    "description": "Chlorine strip read 30 ppm at shift start (min 50). Re-primed once, still low. Using the 3-compartment sink.",
+    "priority": "medium",
+    "status": "open",
+    "station": "foh",
+    "assigneeId": "CM-03",
+    "reporterId": "CM-10",
+    "relatedDocId": "DOC-SOP-006",
+    "createdAt": "@ago:43.03",
+    "updatedAt": "@ago:10.00",
+    "tags": [
+      "dish",
+      "food-safety"
+    ]
+  },
+  {
+    "id": "TKT-032",
+    "title": "Reprint allergen menu cards (sesame added)",
+    "description": "Sesame needs to be on the allergen matrix card at the host stand.",
+    "priority": "low",
+    "status": "open",
+    "station": "foh",
+    "assigneeId": "CM-09",
+    "reporterId": "CM-09",
+    "relatedDocId": "DOC-ONB-004",
+    "createdAt": "@ago:305.92",
+    "updatedAt": "@ago:150.00",
+    "tags": [
+      "allergen",
+      "menu"
+    ]
+  },
+  {
+    "id": "TKT-033",
+    "title": "Expo heat lamp bulb out",
+    "description": "Left bulb over the pass is out.",
+    "priority": "low",
+    "status": "open",
+    "station": "foh",
+    "assigneeId": "CM-10",
+    "reporterId": "CM-10",
+    "relatedDocId": null,
+    "createdAt": "@ago:88.80",
+    "updatedAt": "@ago:80.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-034",
+    "title": "Guest reaction — sesame not on menu matrix",
+    "description": "Mild reaction, guest OK. Sesame added to allergen matrix.",
+    "priority": "high",
+    "status": "resolved",
+    "station": "foh",
+    "assigneeId": "CM-09",
+    "reporterId": "CM-10",
+    "relatedDocId": "DOC-ONB-004",
+    "createdAt": "@ago:471.68",
+    "updatedAt": "@ago:420.00",
+    "tags": [
+      "allergen"
+    ]
+  },
+  {
+    "id": "TKT-035",
+    "title": "Cooling log missing 6 h entries",
+    "description": "Log retraining done at pre-shift.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "prep",
+    "assigneeId": "CM-01",
+    "reporterId": "CM-11",
+    "relatedDocId": "DOC-SOP-003",
+    "createdAt": "@ago:375.57",
+    "updatedAt": "@ago:330.00",
+    "tags": [
+      "food-safety",
+      "cooling"
+    ]
+  },
+  {
+    "id": "TKT-036",
+    "title": "Label gun jammed",
+    "description": "Cleared and cleaned.",
+    "priority": "low",
+    "status": "resolved",
+    "station": "pastry",
+    "assigneeId": "CM-05",
+    "reporterId": "CM-05",
+    "relatedDocId": null,
+    "createdAt": "@ago:359.45",
+    "updatedAt": "@ago:300.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-037",
+    "title": "Hood filter missing from bank 2",
+    "description": "Filter was in the dish pit; reinstalled.",
+    "priority": "medium",
+    "status": "closed",
+    "station": "grill",
+    "assigneeId": "CM-03",
+    "reporterId": "CM-02",
+    "relatedDocId": null,
+    "createdAt": "@ago:622.33",
+    "updatedAt": "@ago:560.00",
+    "tags": [
+      "hood",
+      "safety"
+    ]
+  },
+  {
+    "id": "TKT-038",
+    "title": "Replace wet floor signs",
+    "description": "Two new signs at the dish pit.",
+    "priority": "low",
+    "status": "resolved",
+    "station": "foh",
+    "assigneeId": "CM-10",
+    "reporterId": "CM-09",
+    "relatedDocId": "DOC-INC-005",
+    "createdAt": "@ago:1005.22",
+    "updatedAt": "@ago:950.00",
+    "tags": [
+      "safety"
+    ]
+  },
+  {
+    "id": "TKT-039",
+    "title": "Stockpot handle loose",
+    "description": "Rivets replaced.",
+    "priority": "medium",
+    "status": "resolved",
+    "station": "prep",
+    "assigneeId": "CM-08",
+    "reporterId": "CM-07",
+    "relatedDocId": null,
+    "createdAt": "@ago:452.10",
+    "updatedAt": "@ago:400.00",
+    "tags": [
+      "equipment"
+    ]
+  },
+  {
+    "id": "TKT-040",
+    "title": "Gas smell near the line — valve tightened",
+    "description": "Utility checked, fitting tightened, no leak on re-test.",
+    "priority": "high",
+    "status": "resolved",
+    "station": "grill",
+    "assigneeId": "CM-02",
+    "reporterId": "CM-03",
+    "relatedDocId": null,
+    "createdAt": "@ago:906.98",
+    "updatedAt": "@ago:880.00",
+    "tags": [
+      "safety",
+      "gas"
+    ]
+  }
+]

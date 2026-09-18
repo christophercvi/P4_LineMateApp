@@ -1,0 +1,658 @@
+[
+  {
+    "id": "C-001",
+    "ticketId": "TKT-017",
+    "authorId": "CM-06",
+    "body": "Chili batch read 88°F at the 2 h check. Reheated to 165°F and split into 2-in pans with ice wands. Passed at 2 h and 6 h. Photo of the E4 error attached.",
+    "createdAt": "@ago:214.00",
+    "parentId": null
+  },
+  {
+    "id": "C-002",
+    "ticketId": "TKT-017",
+    "authorId": "CM-11",
+    "body": "Thanks Samuel. Until this is fixed, no stockpot cooling in the blast chiller. Ice bath + wands only.",
+    "createdAt": "@ago:212.00",
+    "parentId": "C-001"
+  },
+  {
+    "id": "C-003",
+    "ticketId": "TKT-017",
+    "authorId": "CM-10",
+    "body": "Assigned to me because I called PolarServ from the front — they can come Thursday.",
+    "createdAt": "@ago:190.00",
+    "parentId": null
+  },
+  {
+    "id": "C-004",
+    "ticketId": "TKT-017",
+    "authorId": "CM-06",
+    "body": "Omar, Thursday is too late for a Critical. Can we ask for the emergency slot?",
+    "createdAt": "@ago:188.00",
+    "parentId": "C-003"
+  },
+  {
+    "id": "C-005",
+    "ticketId": "TKT-017",
+    "authorId": "CM-10",
+    "body": "Emergency slot is $450 call-out. Need a manager OK for that.",
+    "createdAt": "@ago:160.00",
+    "parentId": "C-004"
+  },
+  {
+    "id": "C-006",
+    "ticketId": "TKT-017",
+    "authorId": "CM-07",
+    "body": "Cooling log for Tuesday chicken stock: 0 h 180°F, 2 h 68°F, 6 h 40°F with wands. OK but slow.",
+    "createdAt": "@ago:30.00",
+    "parentId": null
+  },
+  {
+    "id": "C-007",
+    "ticketId": "TKT-017",
+    "authorId": "CM-06",
+    "body": "Still E4 this morning. This should really be with prep or the KM, not FOH.",
+    "createdAt": "@ago:2.00",
+    "parentId": null
+  },
+  {
+    "id": "C-008",
+    "ticketId": "TKT-005",
+    "authorId": "CM-03",
+    "body": "Invoice signed before we noticed only 2 cases on the pallet. Photo attached.",
+    "createdAt": "@ago:96.00",
+    "parentId": null
+  },
+  {
+    "id": "C-009",
+    "ticketId": "TKT-005",
+    "authorId": "CM-02",
+    "body": "Called Harbor — backorder until next Tuesday. We need a top-up from another supplier.",
+    "createdAt": "@ago:94.00",
+    "parentId": "C-008"
+  },
+  {
+    "id": "C-010",
+    "ticketId": "TKT-005",
+    "authorId": "CM-02",
+    "body": "One case left after last night's change. Drafting an order for 6 cases from Coastal Restaurant Supply.",
+    "createdAt": "@ago:5.00",
+    "parentId": null
+  },
+  {
+    "id": "C-011",
+    "ticketId": "TKT-009",
+    "authorId": "CM-02",
+    "body": "TPM 27% this morning. Log shows no change Mon/Tue but close checklist is signed.",
+    "createdAt": "@ago:72.00",
+    "parentId": null
+  },
+  {
+    "id": "C-012",
+    "ticketId": "TKT-009",
+    "authorId": "CM-09",
+    "body": "I got assigned since I sign the closing sheets, but I don't close fry. Can someone on grill take this?",
+    "createdAt": "@ago:60.00",
+    "parentId": "C-011"
+  },
+  {
+    "id": "C-013",
+    "ticketId": "TKT-009",
+    "authorId": "CM-01",
+    "body": "Deshawn and Jordan closed fry those nights. Jordan is new — may not know the 4-day rule.",
+    "createdAt": "@ago:50.00",
+    "parentId": "C-012"
+  },
+  {
+    "id": "C-014",
+    "ticketId": "TKT-001",
+    "authorId": "CM-01",
+    "body": "Flare-up hit the hood around 8:40 PM Saturday. Put it out with the lid, no suppression discharge.",
+    "createdAt": "@ago:50.00",
+    "parentId": null
+  },
+  {
+    "id": "C-015",
+    "ticketId": "TKT-001",
+    "authorId": "CM-02",
+    "body": "Inspection sticker expired last month. Vendor booked for Thursday 7 AM. Grill #1 low flame only until then.",
+    "createdAt": "@ago:48.00",
+    "parentId": "C-014"
+  },
+  {
+    "id": "C-016",
+    "ticketId": "TKT-001",
+    "authorId": "CM-11",
+    "body": "Approved the inspection PO. Priya, please confirm once the new sticker is on.",
+    "createdAt": "@ago:3.00",
+    "parentId": null
+  },
+  {
+    "id": "C-017",
+    "ticketId": "TKT-020",
+    "authorId": "CM-08",
+    "body": "Display 43°F, probe in milk 42°F at 6:05 AM. Door closer slow. Moved dairy to reach-ins.",
+    "createdAt": "@ago:20.00",
+    "parentId": null
+  },
+  {
+    "id": "C-018",
+    "ticketId": "TKT-020",
+    "authorId": "CM-06",
+    "body": "Called PolarServ. Following the alarm SOP — product was over 41°F for less than 4 h, so kept.",
+    "createdAt": "@ago:18.00",
+    "parentId": "C-017"
+  },
+  {
+    "id": "C-019",
+    "ticketId": "TKT-020",
+    "authorId": "CM-06",
+    "body": "Reading 39°F after the door adjustment. Keeping this open until the vendor checks the closer.",
+    "createdAt": "@ago:6.00",
+    "parentId": null
+  },
+  {
+    "id": "C-020",
+    "ticketId": "TKT-022",
+    "authorId": "CM-04",
+    "body": "Croissants collapsed again — proofed exactly 2 h at 78°F / 80% RH like the recipe card says.",
+    "createdAt": "@ago:190.00",
+    "parentId": null
+  },
+  {
+    "id": "C-021",
+    "ticketId": "TKT-022",
+    "authorId": "CM-07",
+    "body": "I was assigned this from prep because I did the proofer install paperwork. Not sure what I can do on the recipe side.",
+    "createdAt": "@ago:170.00",
+    "parentId": "C-020"
+  },
+  {
+    "id": "C-022",
+    "ticketId": "TKT-022",
+    "authorId": "CM-05",
+    "body": "Tried 75°F / 75% RH for 1 h 40 min — much better. Recipe card needs updating.",
+    "createdAt": "@ago:40.00",
+    "parentId": null
+  },
+  {
+    "id": "C-023",
+    "ticketId": "TKT-031",
+    "authorId": "CM-10",
+    "body": "Strip read 30 ppm at 4 PM. Re-primed, still 35 ppm. Switched to 3-comp sink.",
+    "createdAt": "@ago:48.00",
+    "parentId": null
+  },
+  {
+    "id": "C-024",
+    "ticketId": "TKT-031",
+    "authorId": "CM-03",
+    "body": "Why is this on me? I'm on grill.",
+    "createdAt": "@ago:40.00",
+    "parentId": "C-023"
+  },
+  {
+    "id": "C-025",
+    "ticketId": "TKT-031",
+    "authorId": "CM-09",
+    "body": "Chemical jug was nearly empty and the pickup tube was above the liquid. New jug on order.",
+    "createdAt": "@ago:10.00",
+    "parentId": null
+  },
+  {
+    "id": "C-026",
+    "ticketId": "TKT-012",
+    "authorId": "CM-12",
+    "body": "Front-left zone reads 285°F when the rest is 375°F.",
+    "createdAt": "@ago:118.00",
+    "parentId": null
+  },
+  {
+    "id": "C-027",
+    "ticketId": "TKT-012",
+    "authorId": "CM-03",
+    "body": "Burner orifice looks clogged. Asked maintenance to clean it Tuesday morning.",
+    "createdAt": "@ago:20.00",
+    "parentId": "C-026"
+  },
+  {
+    "id": "C-028",
+    "ticketId": "TKT-014",
+    "authorId": "CM-02",
+    "body": "Two call-outs for Friday. Shift scheduler shows nobody free. Considering a reduced grill menu.",
+    "createdAt": "@ago:24.00",
+    "parentId": null
+  },
+  {
+    "id": "C-029",
+    "ticketId": "TKT-014",
+    "authorId": "CM-11",
+    "body": "Let's ask Deshawn about a double and pull the brisket special if we can't cover.",
+    "createdAt": "@ago:4.00",
+    "parentId": "C-028"
+  },
+  {
+    "id": "C-030",
+    "ticketId": "TKT-010",
+    "authorId": "CM-01",
+    "body": "Jams on tickets with 8+ items. Tearing by hand during rush.",
+    "createdAt": "@ago:210.00",
+    "parentId": null
+  },
+  {
+    "id": "C-031",
+    "ticketId": "TKT-010",
+    "authorId": "CM-02",
+    "body": "POS vendor is shipping a new cutter assembly. Blocked until it arrives.",
+    "createdAt": "@ago:50.00",
+    "parentId": "C-030"
+  },
+  {
+    "id": "C-032",
+    "ticketId": "TKT-007",
+    "authorId": "CM-03",
+    "body": "Right burner is weaker than the left. Takes ~25 min to reach temp.",
+    "createdAt": "@ago:140.00",
+    "parentId": null
+  },
+  {
+    "id": "C-033",
+    "ticketId": "TKT-007",
+    "authorId": "CM-01",
+    "body": "Pre-heating 30 min earlier as a workaround.",
+    "createdAt": "@ago:30.00",
+    "parentId": "C-032"
+  },
+  {
+    "id": "C-034",
+    "ticketId": "TKT-015",
+    "authorId": "CM-12",
+    "body": "Found bristles on grate 2 this morning. Two brushes shedding.",
+    "createdAt": "@ago:280.00",
+    "parentId": null
+  },
+  {
+    "id": "C-035",
+    "ticketId": "TKT-015",
+    "authorId": "CM-02",
+    "body": "Order the stainless coil brushes, not bristle ones.",
+    "createdAt": "@ago:200.00",
+    "parentId": "C-034"
+  },
+  {
+    "id": "C-036",
+    "ticketId": "TKT-018",
+    "authorId": "CM-07",
+    "body": "Use-by date is blank on every label since the update.",
+    "createdAt": "@ago:160.00",
+    "parentId": null
+  },
+  {
+    "id": "C-037",
+    "ticketId": "TKT-018",
+    "authorId": "CM-08",
+    "body": "Firmware update tonight after close.",
+    "createdAt": "@ago:60.00",
+    "parentId": "C-036"
+  },
+  {
+    "id": "C-038",
+    "ticketId": "TKT-023",
+    "authorId": "CM-05",
+    "body": "Half a box of 18-in bags left.",
+    "createdAt": "@ago:230.00",
+    "parentId": null
+  },
+  {
+    "id": "C-039",
+    "ticketId": "TKT-024",
+    "authorId": "CM-08",
+    "body": "Right corner of the seal stays open. Double-sealing for now.",
+    "createdAt": "@ago:250.00",
+    "parentId": null
+  },
+  {
+    "id": "C-040",
+    "ticketId": "TKT-024",
+    "authorId": "CM-07",
+    "body": "Heat strip ordered, arrives Friday.",
+    "createdAt": "@ago:70.00",
+    "parentId": "C-039"
+  },
+  {
+    "id": "C-041",
+    "ticketId": "TKT-025",
+    "authorId": "CM-05",
+    "body": "Back-right position is dark on the bottom. Rotating at 6 min.",
+    "createdAt": "@ago:140.00",
+    "parentId": null
+  },
+  {
+    "id": "C-042",
+    "ticketId": "TKT-025",
+    "authorId": "CM-04",
+    "body": "Oven tech can come next week. Keeping the rotation.",
+    "createdAt": "@ago:90.00",
+    "parentId": "C-041"
+  },
+  {
+    "id": "C-043",
+    "ticketId": "TKT-026",
+    "authorId": "CM-06",
+    "body": "Purple board lost its tab — that one matters for allergens.",
+    "createdAt": "@ago:330.00",
+    "parentId": null
+  },
+  {
+    "id": "C-044",
+    "ticketId": "TKT-026",
+    "authorId": "CM-08",
+    "body": "Tagged the purple ones with tape until replacements arrive.",
+    "createdAt": "@ago:300.00",
+    "parentId": "C-043"
+  },
+  {
+    "id": "C-045",
+    "ticketId": "TKT-028",
+    "authorId": "CM-07",
+    "body": "Three batches in a row at 26–27 qt.",
+    "createdAt": "@ago:70.00",
+    "parentId": null
+  },
+  {
+    "id": "C-046",
+    "ticketId": "TKT-028",
+    "authorId": "CM-06",
+    "body": "Overnight simmer is too hard. Moving the kettle to setting 3 tonight.",
+    "createdAt": "@ago:26.00",
+    "parentId": "C-045"
+  },
+  {
+    "id": "C-047",
+    "ticketId": "TKT-032",
+    "authorId": "CM-09",
+    "body": "Host stand card still lists eight allergens; sesame missing.",
+    "createdAt": "@ago:310.00",
+    "parentId": null
+  },
+  {
+    "id": "C-048",
+    "ticketId": "TKT-033",
+    "authorId": "CM-10",
+    "body": "Left bulb over the pass is out; food cooling fast on that side.",
+    "createdAt": "@ago:95.00",
+    "parentId": null
+  },
+  {
+    "id": "C-049",
+    "ticketId": "TKT-002",
+    "authorId": "CM-01",
+    "body": "Igniter clicks but no flame.",
+    "createdAt": "@ago:600.00",
+    "parentId": null
+  },
+  {
+    "id": "C-050",
+    "ticketId": "TKT-002",
+    "authorId": "CM-03",
+    "body": "Vendor replaced the igniter. Working.",
+    "createdAt": "@ago:500.00",
+    "parentId": "C-049"
+  },
+  {
+    "id": "C-051",
+    "ticketId": "TKT-003",
+    "authorId": "CM-07",
+    "body": "Door doesn't close on its own.",
+    "createdAt": "@ago:960.00",
+    "parentId": null
+  },
+  {
+    "id": "C-052",
+    "ticketId": "TKT-003",
+    "authorId": "CM-06",
+    "body": "New closer installed. Closing.",
+    "createdAt": "@ago:900.00",
+    "parentId": "C-051"
+  },
+  {
+    "id": "C-053",
+    "ticketId": "TKT-004",
+    "authorId": "CM-04",
+    "body": "Crack near the shaft of the flat paddle.",
+    "createdAt": "@ago:790.00",
+    "parentId": null
+  },
+  {
+    "id": "C-054",
+    "ticketId": "TKT-004",
+    "authorId": "CM-05",
+    "body": "Replacement installed.",
+    "createdAt": "@ago:700.00",
+    "parentId": "C-053"
+  },
+  {
+    "id": "C-055",
+    "ticketId": "TKT-006",
+    "authorId": "CM-09",
+    "body": "Allergy modifier now prints first and in bold.",
+    "createdAt": "@ago:2040.00",
+    "parentId": null
+  },
+  {
+    "id": "C-056",
+    "ticketId": "TKT-008",
+    "authorId": "CM-03",
+    "body": "Fryer #1 hitting 390°F with the dial at 350°F.",
+    "createdAt": "@ago:1080.00",
+    "parentId": null
+  },
+  {
+    "id": "C-057",
+    "ticketId": "TKT-008",
+    "authorId": "CM-02",
+    "body": "Thermostat replaced and calibrated.",
+    "createdAt": "@ago:1000.00",
+    "parentId": "C-056"
+  },
+  {
+    "id": "C-058",
+    "ticketId": "TKT-011",
+    "authorId": "CM-08",
+    "body": "Missing 10 sheet trays from prep.",
+    "createdAt": "@ago:1200.00",
+    "parentId": null
+  },
+  {
+    "id": "C-059",
+    "ticketId": "TKT-011",
+    "authorId": "CM-08",
+    "body": "Found in the pastry rack. Labelled by station now.",
+    "createdAt": "@ago:1100.00",
+    "parentId": "C-058"
+  },
+  {
+    "id": "C-060",
+    "ticketId": "TKT-013",
+    "authorId": "CM-06",
+    "body": "Ice machine output about half of normal.",
+    "createdAt": "@ago:670.00",
+    "parentId": null
+  },
+  {
+    "id": "C-061",
+    "ticketId": "TKT-013",
+    "authorId": "CM-07",
+    "body": "Filter replaced; back to spec.",
+    "createdAt": "@ago:600.00",
+    "parentId": "C-060"
+  },
+  {
+    "id": "C-062",
+    "ticketId": "TKT-016",
+    "authorId": "CM-06",
+    "body": "Alarm still pages the old number.",
+    "createdAt": "@ago:1320.00",
+    "parentId": null
+  },
+  {
+    "id": "C-063",
+    "ticketId": "TKT-016",
+    "authorId": "CM-11",
+    "body": "Updated: KM and both sous chefs now get the page.",
+    "createdAt": "@ago:1250.00",
+    "parentId": "C-062"
+  },
+  {
+    "id": "C-064",
+    "ticketId": "TKT-019",
+    "authorId": "CM-02",
+    "body": "Grates 3 and 4 are warped.",
+    "createdAt": "@ago:520.00",
+    "parentId": null
+  },
+  {
+    "id": "C-065",
+    "ticketId": "TKT-019",
+    "authorId": "CM-01",
+    "body": "Replaced both.",
+    "createdAt": "@ago:450.00",
+    "parentId": "C-064"
+  },
+  {
+    "id": "C-066",
+    "ticketId": "TKT-021",
+    "authorId": "CM-09",
+    "body": "Tablet dies mid-shift; charger missing.",
+    "createdAt": "@ago:430.00",
+    "parentId": null
+  },
+  {
+    "id": "C-067",
+    "ticketId": "TKT-027",
+    "authorId": "CM-11",
+    "body": "New proofer installed. Aiko, please update the recipe card too.",
+    "createdAt": "@ago:1680.00",
+    "parentId": null
+  },
+  {
+    "id": "C-068",
+    "ticketId": "TKT-027",
+    "authorId": "CM-04",
+    "body": "Door card updated. Recipe card will follow.",
+    "createdAt": "@ago:1600.00",
+    "parentId": "C-067"
+  },
+  {
+    "id": "C-069",
+    "ticketId": "TKT-029",
+    "authorId": "CM-01",
+    "body": "Six squeeze bottles cracked at the neck.",
+    "createdAt": "@ago:840.00",
+    "parentId": null
+  },
+  {
+    "id": "C-070",
+    "ticketId": "TKT-030",
+    "authorId": "CM-06",
+    "body": "Guard missing from the mandoline — no one uses it without the guard.",
+    "createdAt": "@ago:720.00",
+    "parentId": null
+  },
+  {
+    "id": "C-071",
+    "ticketId": "TKT-030",
+    "authorId": "CM-07",
+    "body": "Found it and tethered it to the stand.",
+    "createdAt": "@ago:650.00",
+    "parentId": "C-070"
+  },
+  {
+    "id": "C-072",
+    "ticketId": "TKT-034",
+    "authorId": "CM-10",
+    "body": "Guest had a mild reaction to sesame in the dressing. Guest OK, comped.",
+    "createdAt": "@ago:480.00",
+    "parentId": null
+  },
+  {
+    "id": "C-073",
+    "ticketId": "TKT-034",
+    "authorId": "CM-09",
+    "body": "Sesame added to the allergen matrix and the FOH standards doc.",
+    "createdAt": "@ago:420.00",
+    "parentId": "C-072"
+  },
+  {
+    "id": "C-074",
+    "ticketId": "TKT-035",
+    "authorId": "CM-11",
+    "body": "Cooling log for Thursday has no 6 h entries.",
+    "createdAt": "@ago:380.00",
+    "parentId": null
+  },
+  {
+    "id": "C-075",
+    "ticketId": "TKT-035",
+    "authorId": "CM-01",
+    "body": "That was me covering prep. Retrained at pre-shift.",
+    "createdAt": "@ago:330.00",
+    "parentId": "C-074"
+  },
+  {
+    "id": "C-076",
+    "ticketId": "TKT-036",
+    "authorId": "CM-05",
+    "body": "Label gun jammed with a torn label.",
+    "createdAt": "@ago:350.00",
+    "parentId": null
+  },
+  {
+    "id": "C-077",
+    "ticketId": "TKT-037",
+    "authorId": "CM-02",
+    "body": "Bank 2 is missing a hood filter — fire risk.",
+    "createdAt": "@ago:620.00",
+    "parentId": null
+  },
+  {
+    "id": "C-078",
+    "ticketId": "TKT-037",
+    "authorId": "CM-03",
+    "body": "It was in the dish pit. Reinstalled.",
+    "createdAt": "@ago:560.00",
+    "parentId": "C-077"
+  },
+  {
+    "id": "C-079",
+    "ticketId": "TKT-038",
+    "authorId": "CM-09",
+    "body": "Wet floor signs cracked.",
+    "createdAt": "@ago:1000.00",
+    "parentId": null
+  },
+  {
+    "id": "C-080",
+    "ticketId": "TKT-039",
+    "authorId": "CM-07",
+    "body": "Handle loose on the 40 qt stockpot.",
+    "createdAt": "@ago:450.00",
+    "parentId": null
+  },
+  {
+    "id": "C-081",
+    "ticketId": "TKT-040",
+    "authorId": "CM-03",
+    "body": "Smelled gas near the grill line at 3 PM.",
+    "createdAt": "@ago:910.00",
+    "parentId": null
+  },
+  {
+    "id": "C-082",
+    "ticketId": "TKT-040",
+    "authorId": "CM-02",
+    "body": "Utility checked; fitting tightened; re-test clean.",
+    "createdAt": "@ago:880.00",
+    "parentId": "C-081"
+  }
+]

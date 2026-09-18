@@ -1,0 +1,26 @@
+[
+  {
+    "id": "grill",
+    "name": "Grill",
+    "short": "GRL",
+    "color": "#C2410C"
+  },
+  {
+    "id": "pastry",
+    "name": "Pastry",
+    "short": "PST",
+    "color": "#C41D7F"
+  },
+  {
+    "id": "prep",
+    "name": "Prep",
+    "short": "PRP",
+    "color": "#5B8C00"
+  },
+  {
+    "id": "foh",
+    "name": "Front of House",
+    "short": "FOH",
+    "color": "#475569"
+  }
+]

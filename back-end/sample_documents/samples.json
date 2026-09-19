@@ -1,0 +1,122 @@
+[
+  {
+    "file": "lemon-olive-oil-cake.docx",
+    "title": "Lemon Olive Oil Cake",
+    "category": "recipe",
+    "station": "pastry",
+    "ownerId": "CM-05",
+    "summary": "Pastry station recipe for Lemon Olive Oil Cake with scaled ingredients, method, bake times, doneness checks, storage, and allergen notes.",
+    "tags": [
+      "pastry",
+      "recipes",
+      "cakes",
+      "standard-operating",
+      "allergens"
+    ]
+  },
+  {
+    "file": "receiving-deliveries-and-cold-chain-checks.pdf",
+    "title": "Receiving Deliveries and Cold-Chain Checks",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "summary": "SOP for Prep to receive deliveries, verify temps, manage shellfish tags, reject issues, log shorts, rotate FIFO, and complete sign-off.",
+    "tags": [
+      "sop",
+      "prep",
+      "receiving",
+      "food-safety",
+      "cold-chain"
+    ]
+  },
+  {
+    "file": "ice-machine-cleaning-and-sanitizing.md",
+    "title": "Ice Machine Cleaning and Sanitizing",
+    "category": "sop",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "summary": "FOH SOP for safe ice: daily handling rules, leak/drain checks, lockout, and monthly descale/sanitize with sanitizer ppm, contact times, and restart steps.",
+    "tags": [
+      "foh",
+      "cleaning",
+      "safety",
+      "sop",
+      "equipment"
+    ]
+  },
+  {
+    "file": "allergen-communication-script-for-servers.docx",
+    "title": "Allergen Communication Script for Servers",
+    "category": "onboarding",
+    "station": "foh",
+    "ownerId": "CM-09",
+    "summary": "FOH allergy onboarding: exact script, POS ALLERGY flag, expo communication, top 9 allergens, cross-contact rules, phrases to avoid, and Sous escalation.",
+    "tags": [
+      "front of house",
+      "allergens",
+      "onboarding",
+      "service",
+      "kitchen communication"
+    ]
+  },
+  {
+    "file": "fry-station-quick-reference.pptx",
+    "title": "Fry Station Quick Reference",
+    "category": "onboarding",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "summary": "Fry station quick reference for Hearthline: temps, loads, oil care, filtering, safety, and fire response for new line cooks.",
+    "tags": [
+      "kitchen",
+      "sops",
+      "grill",
+      "fry",
+      "safety"
+    ]
+  },
+  {
+    "file": "quick-pickles-and-brines.xlsx",
+    "title": "Quick Pickles and Brines",
+    "category": "recipe",
+    "station": "prep",
+    "ownerId": "CM-07",
+    "summary": "Prep station quick pickle SOP: brine ratios, yields, temps, pH ≤4.2, cooling, labeling, and 14-day shelf life. Owner: Hannah Becker.",
+    "tags": [
+      "prep",
+      "recipes",
+      "food-safety",
+      "sop",
+      "pickling"
+    ]
+  },
+  {
+    "file": "incident-mislabelled-allergen-container-in-the-walk-in.docx",
+    "title": "Incident: Mislabelled Allergen Container in the Walk-in",
+    "category": "incident",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "summary": "Mislabelled pesto as basil oil caught at the pass; product discarded; root causes fixed with color labels, two-person checks, and storage segregation.",
+    "tags": [
+      "kitchen ops",
+      "food safety",
+      "allergens",
+      "prep",
+      "incident report"
+    ]
+  },
+  {
+    "file": "grill-station-closing-and-grate-seasoning.pdf",
+    "title": "Grill Station Closing and Grate Seasoning",
+    "category": "sop",
+    "station": "grill",
+    "ownerId": "CM-02",
+    "summary": "End-of-night Grill station SOP: safe shutdown, grate seasoning, flat-top cleaning, grease and hood checks, sanitizing, checklist, and sign-off.",
+    "tags": [
+      "sop",
+      "grill",
+      "closing",
+      "kitchen-operations",
+      "food-safety"
+    ]
+  }
+]

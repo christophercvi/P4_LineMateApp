@@ -1,0 +1,41 @@
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+}
+
+.lm-num {
+  font-variant-numeric: tabular-nums;
+}
+
+.lm-ai {
+  border-inline-start: 3px solid #c2410c;
+  padding-inline-start: 12px;
+}
+
+.lm-kanban-col {
+  min-width: 260px;
+  flex: 1 1 0;
+}
+
+@media (max-width: 767px) {
+  .lm-hide-mobile {
+    display: none !important;
+  }
+}
+
+.lm-show-mobile {
+  display: none !important;
+}
+
+@media (max-width: 991px) {
+  .lm-show-mobile {
+    display: flex !important;
+  }
+}

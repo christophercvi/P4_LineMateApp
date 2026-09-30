@@ -1,0 +1,231 @@
+{
+  "scope": "Grill",
+  "kpis": {
+    "open": 10,
+    "critical": 1,
+    "high": 4,
+    "staleDocs": 5,
+    "pendingApprovals": 4,
+    "myOpen": 1,
+    "resolutionRate": 0.23076923076923078
+  },
+  "openTrend": [0, 0, 1, 1, 1, 2, 2, 2, 3, 4, 6, 6, 7, 10],
+  "closedTrend": [0, 0, 0, 0, 0, 0, 2, 1, 1, 2, 0, 0],
+  "myTickets": [
+    {
+      "id": "TKT-010",
+      "title": "Grill ticket printer jams during rush",
+      "description": "Printer jams on long tickets (8+ items). Blocked: waiting on POS vendor to ship a replacement cutter.",
+      "priority": "medium",
+      "status": "blocked",
+      "station": "grill",
+      "assigneeId": "CM-01",
+      "reporterId": "CM-01",
+      "relatedDocId": null,
+      "createdAt": "2026-09-22T10:39:57.120158Z",
+      "updatedAt": "2026-09-29T07:08:45.120158Z",
+      "tags": ["equipment", "pos"],
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "docStale": false,
+      "mismatch": false
+    }
+  ],
+  "staleCited": [
+    {
+      "docId": "DOC-SOP-005",
+      "title": "Grill Deep Clean & Degreasing",
+      "category": "sop",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "lastReviewed": "2025-12-05T17:29:45.120158Z",
+      "daysSinceReview": 300,
+      "openTickets": 3,
+      "citedLast7d": 2
+    },
+    {
+      "docId": "DOC-SOP-003",
+      "title": "Cooling Hot Foods (Two-Stage Cooling)",
+      "category": "sop",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "lastReviewed": "2026-02-03T17:29:45.120158Z",
+      "daysSinceReview": 240,
+      "openTickets": 1,
+      "citedLast7d": 15
+    },
+    {
+      "docId": "DOC-SOP-006",
+      "title": "Dish Machine Sanitizer Checks",
+      "category": "sop",
+      "station": "foh",
+      "ownerId": "CM-09",
+      "lastReviewed": "2026-03-15T17:29:45.120158Z",
+      "daysSinceReview": 200,
+      "openTickets": 1,
+      "citedLast7d": 5
+    }
+  ],
+  "triageTeaser": [
+    {
+      "ticketId": "TKT-001",
+      "score": 109.0,
+      "reasons": ["Critical priority", "linked SOP stale (DOC-SOP-005)"],
+      "ticket": {
+        "id": "TKT-001",
+        "title": "Hood suppression inspection overdue after flare-up on grill #1",
+        "description": "Grease flare-up reached the hood on grill #1 during Saturday service. The suppression inspection sticker expired last month. Vendor needs to inspect before Friday; until then no high-flame searing on grill #1.",
+        "priority": "critical",
+        "status": "in_progress",
+        "station": "grill",
+        "assigneeId": "CM-02",
+        "reporterId": "CM-01",
+        "relatedDocId": "DOC-SOP-005",
+        "createdAt": "2026-09-29T10:36:57.120158Z",
+        "updatedAt": "2026-10-01T06:08:45.120158Z",
+        "tags": ["safety", "hood"]
+      }
+    },
+    {
+      "ticketId": "TKT-012",
+      "score": 70.5,
+      "reasons": ["High priority", "linked SOP stale (DOC-SOP-005)"],
+      "ticket": {
+        "id": "TKT-012",
+        "title": "Flat-top has a cold spot front-left",
+        "description": "Front-left quarter of the flat-top reads 90°F lower than the rest. Burgers there are coming out under temp. Using the back half only for now.",
+        "priority": "high",
+        "status": "in_progress",
+        "station": "grill",
+        "assigneeId": "CM-03",
+        "reporterId": "CM-12",
+        "relatedDocId": "DOC-SOP-005",
+        "createdAt": "2026-09-26T12:53:45.120158Z",
+        "updatedAt": "2026-09-30T13:08:45.120158Z",
+        "tags": ["equipment"]
+      }
+    },
+    {
+      "ticketId": "TKT-009",
+      "score": 67.5,
+      "reasons": ["High priority", "assigned outside the owning station"],
+      "ticket": {
+        "id": "TKT-009",
+        "title": "Fryer oil changes skipped two nights running",
+        "description": "Fryer log shows no change Monday or Tuesday; TPM read 27% this morning. Close checklist was signed anyway. Need to find out who is closing fry and retrain on the change schedule.",
+        "priority": "high",
+        "status": "open",
+        "station": "grill",
+        "assigneeId": "CM-09",
+        "reporterId": "CM-02",
+        "relatedDocId": "DOC-SOP-001",
+        "createdAt": "2026-09-28T09:32:45.120158Z",
+        "updatedAt": "2026-10-01T01:08:45.120158Z",
+        "tags": ["fryer", "process"]
+      }
+    }
+  ],
+  "activity": [
+    {
+      "id": "179",
+      "at": "2026-10-01T09:38:18.309115Z",
+      "actorId": "CM-02",
+      "actorName": "Priya Nair",
+      "action": "requested approval",
+      "target": "APR-107",
+      "targetType": "approval",
+      "detail": "Order 7 × Grill brush, 18 in stainless"
+    },
+    {
+      "id": "178",
+      "at": "2026-10-01T09:38:18.305791Z",
+      "actorId": "CM-02",
+      "actorName": "Priya Nair",
+      "action": "requested approval",
+      "target": "APR-106",
+      "targetType": "approval",
+      "detail": "Reassign TKT-009 to Priya Nair"
+    },
+    {
+      "id": "177",
+      "at": "2026-10-01T09:34:59.703069Z",
+      "actorId": "CM-01",
+      "actorName": "Marco Alvarez",
+      "action": "commented on",
+      "target": "TKT-042",
+      "targetType": "ticket",
+      "detail": "Photo attached from the line."
+    },
+    {
+      "id": "176",
+      "at": "2026-10-01T09:34:58.572082Z",
+      "actorId": "CM-01",
+      "actorName": "Marco Alvarez",
+      "action": "attached a file to",
+      "target": "TKT-042",
+      "targetType": "ticket",
+      "detail": "blast-chiller-e4.jpg"
+    },
+    {
+      "id": "175",
+      "at": "2026-10-01T09:34:58.461449Z",
+      "actorId": "CM-01",
+      "actorName": "Marco Alvarez",
+      "action": "created",
+      "target": "TKT-042",
+      "targetType": "ticket",
+      "detail": "medium · grill"
+    },
+    {
+      "id": "174",
+      "at": "2026-10-01T09:33:00.937483Z",
+      "actorId": "CM-01",
+      "actorName": "Marco Alvarez",
+      "action": "attached a file to",
+      "target": "TKT-041",
+      "targetType": "ticket",
+      "detail": "blast-chiller-e4.jpg"
+    },
+    {
+      "id": "173",
+      "at": "2026-10-01T09:33:00.832807Z",
+      "actorId": "CM-01",
+      "actorName": "Marco Alvarez",
+      "action": "created",
+      "target": "TKT-041",
+      "targetType": "ticket",
+      "detail": "medium · grill"
+    },
+    {
+      "id": "172",
+      "at": "2026-10-01T09:32:54.594933Z",
+      "actorId": "CM-02",
+      "actorName": "Priya Nair",
+      "action": "uploaded",
+      "target": "DOC-ONB-007",
+      "targetType": "document",
+      "detail": "Fry Station Quick Reference"
+    },
+    {
+      "id": "86",
+      "at": "2026-10-01T07:08:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Still E4 this morning. This should really be with prep or the KM, not FOH."
+    },
+    {
+      "id": "91",
+      "at": "2026-10-01T06:08:45.120158Z",
+      "actorId": "CM-11",
+      "actorName": "Elena Petrova",
+      "action": "commented",
+      "target": "TKT-001",
+      "targetType": "ticket",
+      "detail": "Approved the inspection PO. Priya, please confirm once the new sticker is on."
+    }
+  ],
+  "admin": null
+}

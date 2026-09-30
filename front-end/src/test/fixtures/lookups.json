@@ -1,0 +1,121 @@
+{
+  "stations": [
+    {
+      "id": "grill",
+      "name": "Grill",
+      "color": "#C2410C",
+      "short": "GRL"
+    },
+    {
+      "id": "pastry",
+      "name": "Pastry",
+      "color": "#C41D7F",
+      "short": "PST"
+    },
+    {
+      "id": "prep",
+      "name": "Prep",
+      "color": "#5B8C00",
+      "short": "PRP"
+    },
+    {
+      "id": "foh",
+      "name": "Front of House",
+      "color": "#475569",
+      "short": "FOH"
+    }
+  ],
+  "crew": [
+    {
+      "id": "CM-01",
+      "name": "Marco Alvarez",
+      "station": "grill",
+      "title": "Line Cook",
+      "initials": "MA"
+    },
+    {
+      "id": "CM-02",
+      "name": "Priya Nair",
+      "station": "grill",
+      "title": "Sous Chef, Grill",
+      "initials": "PN"
+    },
+    {
+      "id": "CM-03",
+      "name": "Deshawn Carter",
+      "station": "grill",
+      "title": "Line Cook",
+      "initials": "DC"
+    },
+    {
+      "id": "CM-04",
+      "name": "Aiko Tanaka",
+      "station": "pastry",
+      "title": "Pastry Lead",
+      "initials": "AT"
+    },
+    {
+      "id": "CM-05",
+      "name": "Lucia Romano",
+      "station": "pastry",
+      "title": "Pastry Cook",
+      "initials": "LR"
+    },
+    {
+      "id": "CM-06",
+      "name": "Samuel Okafor",
+      "station": "prep",
+      "title": "Sous Chef, Prep",
+      "initials": "SO"
+    },
+    {
+      "id": "CM-07",
+      "name": "Hannah Becker",
+      "station": "prep",
+      "title": "Prep Cook",
+      "initials": "HB"
+    },
+    {
+      "id": "CM-08",
+      "name": "Tomás Rivera",
+      "station": "prep",
+      "title": "Prep Cook",
+      "initials": "TR"
+    },
+    {
+      "id": "CM-09",
+      "name": "Grace Liu",
+      "station": "foh",
+      "title": "FOH Lead",
+      "initials": "GL"
+    },
+    {
+      "id": "CM-10",
+      "name": "Omar Haddad",
+      "station": "foh",
+      "title": "Expo / Server",
+      "initials": "OH"
+    },
+    {
+      "id": "CM-11",
+      "name": "Elena Petrova",
+      "station": null,
+      "title": "Kitchen Manager",
+      "initials": "EP"
+    },
+    {
+      "id": "CM-12",
+      "name": "Jordan Kim",
+      "station": "grill",
+      "title": "Line Cook (new hire)",
+      "initials": "JK"
+    },
+    {
+      "id": "CM-13",
+      "name": "Rosa Delgado",
+      "station": "pastry",
+      "title": "Line Cook",
+      "initials": "RD"
+    }
+  ]
+}

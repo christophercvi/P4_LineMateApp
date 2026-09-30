@@ -1,0 +1,449 @@
+[
+  {
+    "id": "RUN-0002",
+    "graph": "triage",
+    "userId": "u-priya",
+    "userName": "Priya Nair",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "2026-10-01T09:39:29.964996Z",
+    "durationMs": 128381,
+    "tokensIn": 646,
+    "tokensOut": 173,
+    "status": "interrupted",
+    "question": "Triage · grill",
+    "nodes": [
+      {
+        "node": "load_tickets",
+        "startedMs": 7,
+        "durationMs": 7,
+        "status": "success",
+        "input": {
+          "station": "grill"
+        },
+        "output": {
+          "open": 10,
+          "critical": 1
+        }
+      },
+      {
+        "node": "rank",
+        "startedMs": 16,
+        "durationMs": 8,
+        "status": "success",
+        "input": {
+          "tickets": 10
+        },
+        "output": {
+          "top": [
+            ["TKT-001", 109.0],
+            ["TKT-012", 70.5],
+            ["TKT-009", 67.5],
+            ["TKT-005", 64.0],
+            ["TKT-014", 60.5]
+          ]
+        }
+      },
+      {
+        "node": "enrich_with_docs",
+        "startedMs": 26,
+        "durationMs": 3399,
+        "status": "success",
+        "input": {
+          "tickets": [
+            "TKT-001",
+            "TKT-012",
+            "TKT-009",
+            "TKT-005",
+            "TKT-014",
+            "TKT-010",
+            "TKT-007",
+            "TKT-041"
+          ]
+        },
+        "output": {
+          "linked_docs": {
+            "TKT-001": "DOC-SOP-005",
+            "TKT-012": "DOC-SOP-005",
+            "TKT-009": "DOC-SOP-001",
+            "TKT-005": "DOC-SOP-001"
+          },
+          "stale": 2,
+          "rosters": [["TKT-014", 2]]
+        }
+      },
+      {
+        "node": "check_supplies",
+        "startedMs": 3428,
+        "durationMs": 1768,
+        "status": "success",
+        "input": {
+          "supply_tickets": ["TKT-005", "TKT-015"]
+        },
+        "output": {
+          "stock": {
+            "TKT-005": "1/4 case",
+            "TKT-015": "2/6 each"
+          }
+        }
+      },
+      {
+        "node": "detect_risks",
+        "startedMs": 5199,
+        "durationMs": 7,
+        "status": "success",
+        "input": {},
+        "output": {
+          "risks": {
+            "ownership_mismatch": 1,
+            "combined": 1,
+            "stale_sop": 2,
+            "shortage": 2,
+            "staffing": 1
+          }
+        }
+      },
+      {
+        "node": "propose_actions",
+        "startedMs": 5208,
+        "durationMs": 51518,
+        "status": "success",
+        "input": {
+          "candidates": 4
+        },
+        "output": {
+          "planner": "pydantic-ai",
+          "approvals": ["APR-106", "APR-107"],
+          "reused": ["APR-104"]
+        }
+      },
+      {
+        "node": "summarize",
+        "startedMs": 56731,
+        "durationMs": 71638,
+        "status": "success",
+        "input": {
+          "model": "qwen3:4b-q4_K_M"
+        },
+        "output": {
+          "tokens_out": 173,
+          "chars": 634
+        }
+      }
+    ]
+  },
+  {
+    "id": "RUN-0001",
+    "graph": "ask",
+    "userId": "u-marco",
+    "userName": "Marco Alvarez",
+    "model": "llama3.2:3b",
+    "startedAt": "2026-10-01T09:37:02.363483Z",
+    "durationMs": 74211,
+    "tokensIn": 918,
+    "tokensOut": 168,
+    "status": "success",
+    "question": "How do I cool a stockpot of chili safely?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 16,
+        "durationMs": 0,
+        "status": "success",
+        "input": {
+          "question": "How do I cool a stockpot of chili safely?"
+        },
+        "output": {
+          "intent": "supply",
+          "flags": [],
+          "memory_turns": 0,
+          "ticket": null
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 18,
+        "durationMs": 2190,
+        "status": "success",
+        "input": {
+          "query": "How do I cool a stockpot of chili safely?",
+          "strategy": "mmr",
+          "k": 4
+        },
+        "output": {
+          "hits": [
+            "DOC-ONB-005",
+            "DOC-REC-005",
+            "DOC-SOP-003",
+            "DOC-SOP-003",
+            "DOC-REC-005",
+            "DOC-SOP-003"
+          ],
+          "scores": [0.719, 0.702, 0.683, 0.693, 0.713, 0.671],
+          "photo_matches": [],
+          "stock": false
+        }
+      },
+      {
+        "node": "grade_documents",
+        "startedMs": 2210,
+        "durationMs": 5,
+        "status": "success",
+        "input": {
+          "floor": 0.35
+        },
+        "output": {
+          "relevant": 3,
+          "hidden_by_role": 1,
+          "docs": ["DOC-ONB-005", "DOC-REC-005", "DOC-SOP-003"]
+        }
+      },
+      {
+        "node": "load_model",
+        "startedMs": 2218,
+        "durationMs": 8885,
+        "status": "success",
+        "input": {
+          "model": "llama3.2:3b"
+        },
+        "output": {
+          "model": "llama3.2:3b",
+          "was_loaded": false,
+          "load_ms": 8885
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 11105,
+        "durationMs": 63089,
+        "status": "success",
+        "input": {
+          "model": "llama3.2:3b",
+          "reasoning": false,
+          "images": 0
+        },
+        "output": {
+          "tokens_in": 918,
+          "tokens_out": 168,
+          "reasoning_ms": 0
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 74199,
+        "durationMs": 3,
+        "status": "success",
+        "input": {},
+        "output": {
+          "cited": ["DOC-ONB-005", "DOC-REC-005", "DOC-SOP-003"],
+          "stale": ["DOC-SOP-003"],
+          "invalid": []
+        }
+      },
+      {
+        "node": "propose_action",
+        "startedMs": 74203,
+        "durationMs": 0,
+        "status": "skipped",
+        "input": {},
+        "output": {
+          "proposal": null
+        }
+      }
+    ]
+  },
+  {
+    "id": "run-ask-1187",
+    "graph": "ask",
+    "userId": "u-samuel",
+    "userName": "Samuel Okafor",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "2026-10-01T07:08:45.120158Z",
+    "durationMs": 4790,
+    "tokensIn": 2140,
+    "tokensOut": 412,
+    "status": "interrupted",
+    "question": "Blast chiller still E4 — what do we do with tonight's stock?",
+    "nodes": [
+      {
+        "node": "classify_intent",
+        "startedMs": 0,
+        "durationMs": 180,
+        "status": "success",
+        "input": {
+          "question": "Blast chiller still E4…"
+        },
+        "output": {
+          "intent": "procedure+action",
+          "tools_needed": ["escalate_incident"]
+        }
+      },
+      {
+        "node": "retrieve",
+        "startedMs": 180,
+        "durationMs": 240,
+        "status": "success",
+        "input": {
+          "query": "cool stock without blast chiller",
+          "k": 4
+        },
+        "output": {
+          "hits": ["DOC-SOP-003", "DOC-INC-004", "DOC-REC-005"]
+        }
+      },
+      {
+        "node": "grade_documents",
+        "startedMs": 420,
+        "durationMs": 410,
+        "status": "success",
+        "input": {
+          "hits": 3
+        },
+        "output": {
+          "relevant": ["DOC-SOP-003", "DOC-REC-005"],
+          "dropped": ["DOC-INC-004"]
+        }
+      },
+      {
+        "node": "generate",
+        "startedMs": 830,
+        "durationMs": 3900,
+        "status": "success",
+        "input": {
+          "context_tokens": 1620,
+          "reasoning": true
+        },
+        "output": {
+          "answer_tokens": 380,
+          "citations": 2
+        }
+      },
+      {
+        "node": "check_citations",
+        "startedMs": 4730,
+        "durationMs": 60,
+        "status": "success",
+        "input": {
+          "citations": 2
+        },
+        "output": {
+          "stale": ["DOC-SOP-003"]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 4790,
+        "durationMs": 0,
+        "status": "interrupted",
+        "input": {
+          "tool": "escalate_incident",
+          "ticket_id": "TKT-017"
+        },
+        "output": {
+          "approval_id": "APR-105",
+          "waiting_for": "kitchen_manager"
+        }
+      }
+    ]
+  },
+  {
+    "id": "run-triage-0931",
+    "graph": "triage",
+    "userId": "u-priya",
+    "userName": "Priya Nair",
+    "model": "qwen3:4b-q4_K_M",
+    "startedAt": "2026-10-01T04:08:45.120158Z",
+    "durationMs": 7000,
+    "tokensIn": 6120,
+    "tokensOut": 980,
+    "status": "interrupted",
+    "question": null,
+    "nodes": [
+      {
+        "node": "load_tickets",
+        "startedMs": 0,
+        "durationMs": 90,
+        "status": "success",
+        "input": {
+          "station": "grill",
+          "statuses": ["open", "in_progress", "blocked"]
+        },
+        "output": {
+          "tickets": 8
+        }
+      },
+      {
+        "node": "rank",
+        "startedMs": 90,
+        "durationMs": 150,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "top": ["TKT-001", "TKT-005", "TKT-009"]
+        }
+      },
+      {
+        "node": "enrich_with_docs",
+        "startedMs": 240,
+        "durationMs": 520,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "linked_docs": 4,
+          "stale_docs": 1,
+          "roster": "Fri dinner 2/4"
+        }
+      },
+      {
+        "node": "detect_risks",
+        "startedMs": 760,
+        "durationMs": 340,
+        "status": "success",
+        "input": {
+          "tickets": 8
+        },
+        "output": {
+          "risks": ["shortage:TKT-005", "mismatch:TKT-009", "staffing:TKT-014"]
+        }
+      },
+      {
+        "node": "summarize",
+        "startedMs": 1100,
+        "durationMs": 5200,
+        "status": "success",
+        "input": {
+          "reasoning": true
+        },
+        "output": {
+          "summary_tokens": 610
+        }
+      },
+      {
+        "node": "propose_actions",
+        "startedMs": 6300,
+        "durationMs": 700,
+        "status": "success",
+        "input": {},
+        "output": {
+          "proposals": ["draft_supply_order"]
+        }
+      },
+      {
+        "node": "human_approval",
+        "startedMs": 7000,
+        "durationMs": 0,
+        "status": "interrupted",
+        "input": {
+          "tool": "draft_supply_order",
+          "quantity": 6
+        },
+        "output": {
+          "approval_id": "APR-104"
+        }
+      }
+    ]
+  }
+]

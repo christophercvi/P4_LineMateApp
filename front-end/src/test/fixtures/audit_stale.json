@@ -1,0 +1,74 @@
+{
+  "threshold": 180,
+  "scope": "Grill",
+  "rows": [
+    {
+      "docId": "DOC-SOP-005",
+      "title": "Grill Deep Clean & Degreasing",
+      "category": "sop",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "lastReviewed": "2025-12-05T17:29:45.120158Z",
+      "daysSinceReview": 300,
+      "openTickets": 3,
+      "citedLast7d": 2
+    },
+    {
+      "docId": "DOC-ONB-002",
+      "title": "Grill Station Orientation",
+      "category": "onboarding",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "lastReviewed": "2026-03-25T17:29:45.120158Z",
+      "daysSinceReview": 190,
+      "openTickets": 0,
+      "citedLast7d": 4
+    }
+  ],
+  "excludedIncidents": [
+    {
+      "docId": "DOC-INC-002",
+      "title": "Incident: Minor Burn at Fry Station",
+      "days": 260
+    }
+  ],
+  "boundary": [],
+  "all": [
+    {
+      "docId": "DOC-REC-001",
+      "title": "Smoked Brisket (Texas style)",
+      "station": "grill",
+      "days": 30
+    },
+    {
+      "docId": "DOC-REC-002",
+      "title": "Steak Frites with Chimichurri",
+      "station": "grill",
+      "days": 60
+    },
+    {
+      "docId": "DOC-SOP-001",
+      "title": "Fryer Oil Filtering & Change Schedule",
+      "station": "grill",
+      "days": 90
+    },
+    {
+      "docId": "DOC-SOP-005",
+      "title": "Grill Deep Clean & Degreasing",
+      "station": "grill",
+      "days": 300
+    },
+    {
+      "docId": "DOC-ONB-002",
+      "title": "Grill Station Orientation",
+      "station": "grill",
+      "days": 190
+    },
+    {
+      "docId": "DOC-ONB-007",
+      "title": "Fry Station Quick Reference",
+      "station": "grill",
+      "days": 0
+    }
+  ]
+}

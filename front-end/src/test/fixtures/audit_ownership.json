@@ -1,0 +1,79 @@
+{
+  "scope": "All stations",
+  "rows": [
+    {
+      "ticketId": "TKT-017",
+      "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+      "priority": "critical",
+      "status": "in_progress",
+      "assigneeId": "CM-10",
+      "assigneeStation": "foh",
+      "docId": "DOC-SOP-003",
+      "docTitle": "Cooling Hot Foods (Two-Stage Cooling)",
+      "docStation": "prep",
+      "docStale": true,
+      "suggestedAssigneeId": "CM-06"
+    },
+    {
+      "ticketId": "TKT-009",
+      "title": "Fryer oil changes skipped two nights running",
+      "priority": "high",
+      "status": "open",
+      "assigneeId": "CM-09",
+      "assigneeStation": "foh",
+      "docId": "DOC-SOP-001",
+      "docTitle": "Fryer Oil Filtering & Change Schedule",
+      "docStation": "grill",
+      "docStale": false,
+      "suggestedAssigneeId": "CM-02"
+    },
+    {
+      "ticketId": "TKT-022",
+      "title": "Croissants over-proofing in the new proofer",
+      "priority": "medium",
+      "status": "open",
+      "assigneeId": "CM-07",
+      "assigneeStation": "prep",
+      "docId": "DOC-REC-004",
+      "docTitle": "Laminated Croissant Dough",
+      "docStation": "pastry",
+      "docStale": true,
+      "suggestedAssigneeId": "CM-04"
+    },
+    {
+      "ticketId": "TKT-031",
+      "title": "Dish machine sanitizer reading 30 ppm",
+      "priority": "medium",
+      "status": "open",
+      "assigneeId": "CM-03",
+      "assigneeStation": "grill",
+      "docId": "DOC-SOP-006",
+      "docTitle": "Dish Machine Sanitizer Checks",
+      "docStation": "foh",
+      "docStale": true,
+      "suggestedAssigneeId": "CM-09"
+    }
+  ],
+  "flows": [
+    {
+      "source": "Prep (owner)",
+      "target": "Front of House (assigned)",
+      "value": 1
+    },
+    {
+      "source": "Grill (owner)",
+      "target": "Front of House (assigned)",
+      "value": 1
+    },
+    {
+      "source": "Pastry (owner)",
+      "target": "Prep (assigned)",
+      "value": 1
+    },
+    {
+      "source": "Front of House (owner)",
+      "target": "Grill (assigned)",
+      "value": 1
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "ticket": {
+    "id": "TKT-017",
+    "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+    "description": "Blast chiller shows error E4 and cannot bring a 6 gal chili batch below 70°F within 2 hours. Batch was reheated and re-cooled with ice wands. Until fixed, all cooling must use ice baths + ice wands in 2-in pans. Vendor visit needed.",
+    "priority": "critical",
+    "status": "in_progress",
+    "station": "prep",
+    "assigneeId": "CM-10",
+    "reporterId": "CM-06",
+    "relatedDocId": "DOC-SOP-003",
+    "createdAt": "2026-09-22T18:28:33.120158Z",
+    "updatedAt": "2026-10-01T07:08:45.120158Z",
+    "tags": ["food-safety", "blast-chiller", "equipment"],
+    "commentCount": 7,
+    "attachmentCount": 2,
+    "docStale": true,
+    "mismatch": true
+  },
+  "comments": [
+    {
+      "id": "C-001",
+      "ticketId": "TKT-017",
+      "authorId": "CM-06",
+      "body": "Chili batch read 88°F at the 2 h check. Reheated to 165°F and split into 2-in pans with ice wands. Passed at 2 h and 6 h. Photo of the E4 error attached.",
+      "createdAt": "2026-09-22T11:08:45.120158Z",
+      "parentId": null
+    },
+    {
+      "id": "C-002",
+      "ticketId": "TKT-017",
+      "authorId": "CM-11",
+      "body": "Thanks Samuel. Until this is fixed, no stockpot cooling in the blast chiller. Ice bath + wands only.",
+      "createdAt": "2026-09-22T13:08:45.120158Z",
+      "parentId": "C-001"
+    },
+    {
+      "id": "C-003",
+      "ticketId": "TKT-017",
+      "authorId": "CM-10",
+      "body": "Assigned to me because I called PolarServ from the front — they can come Thursday.",
+      "createdAt": "2026-09-23T11:08:45.120158Z",
+      "parentId": null
+    },
+    {
+      "id": "C-004",
+      "ticketId": "TKT-017",
+      "authorId": "CM-06",
+      "body": "Omar, Thursday is too late for a Critical. Can we ask for the emergency slot?",
+      "createdAt": "2026-09-23T13:08:45.120158Z",
+      "parentId": "C-003"
+    },
+    {
+      "id": "C-005",
+      "ticketId": "TKT-017",
+      "authorId": "CM-10",
+      "body": "Emergency slot is $450 call-out. Need a manager OK for that.",
+      "createdAt": "2026-09-24T17:08:45.120158Z",
+      "parentId": "C-004"
+    },
+    {
+      "id": "C-006",
+      "ticketId": "TKT-017",
+      "authorId": "CM-07",
+      "body": "Cooling log for Tuesday chicken stock: 0 h 180°F, 2 h 68°F, 6 h 40°F with wands. OK but slow.",
+      "createdAt": "2026-09-30T03:08:45.120158Z",
+      "parentId": null
+    },
+    {
+      "id": "C-007",
+      "ticketId": "TKT-017",
+      "authorId": "CM-06",
+      "body": "Still E4 this morning. This should really be with prep or the KM, not FOH.",
+      "createdAt": "2026-10-01T07:08:45.120158Z",
+      "parentId": null
+    }
+  ],
+  "attachments": [
+    {
+      "id": "ATT-1",
+      "ticketId": "TKT-017",
+      "name": "blast-chiller-e4.jpg",
+      "kind": "jpg",
+      "bytes": 89498,
+      "url": "/api/files/FA-ATT-1?exp=1790851390&sig=7e6d0dcc193f46b312b7463111a26dc7",
+      "uploadedBy": "CM-06",
+      "uploadedAt": "2026-09-22T16:29:45.120158Z"
+    },
+    {
+      "id": "ATT-2",
+      "ticketId": "TKT-017",
+      "name": "chiller-service-log.pdf",
+      "kind": "pdf",
+      "bytes": 41171,
+      "url": "/api/files/FA-ATT-2?exp=1790851390&sig=f2ccd36800f679f1eaa4ba71b3f05da5",
+      "uploadedBy": "CM-06",
+      "uploadedAt": "2026-09-23T11:29:45.120158Z"
+    }
+  ],
+  "relatedDoc": {
+    "id": "DOC-SOP-003",
+    "title": "Cooling Hot Foods (Two-Stage Cooling)",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "2025-04-29T11:29:45.120158Z",
+    "lastReviewed": "2026-02-03T17:29:45.120158Z",
+    "source": "seed",
+    "uploadedBy": "CM-06",
+    "fileName": "cooling-hot-foods-two-stage-cooling.pdf",
+    "fileKind": "pdf",
+    "fileBytes": 88183,
+    "fileUrl": "/api/files/FA-DOC-SOP-003?exp=1790851390&sig=b86e4d277a8db9c8968ee7f629555e59",
+    "summary": "135°F → 70°F within 2 h, then 70°F → 41°F within a further 4 h (6 h total).",
+    "tags": ["cooling", "food-safety", "blast-chiller", "stock"],
+    "status": "ready",
+    "version": 2,
+    "chunkCount": 19,
+    "reviewHistory": [
+      {
+        "at": "2026-02-03T17:29:45.120158Z",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "2025-04-29T11:29:45.120158Z",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ],
+    "stale": true,
+    "daysSinceReview": 240,
+    "openTickets": 1
+  },
+  "mismatch": {
+    "ticketId": "TKT-017",
+    "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+    "priority": "critical",
+    "status": "in_progress",
+    "assigneeId": "CM-10",
+    "assigneeStation": "foh",
+    "docId": "DOC-SOP-003",
+    "docTitle": "Cooling Hot Foods (Two-Stage Cooling)",
+    "docStation": "prep",
+    "docStale": true,
+    "suggestedAssigneeId": "CM-06"
+  },
+  "activity": [
+    {
+      "id": "86",
+      "at": "2026-10-01T07:08:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Still E4 this morning. This should really be with prep or the KM, not FOH."
+    },
+    {
+      "id": "85",
+      "at": "2026-09-30T03:08:45.120158Z",
+      "actorId": "CM-07",
+      "actorName": "Hannah Becker",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Cooling log for Tuesday chicken stock: 0 h 180°F, 2 h 68°F, 6 h 40°F with wands. OK but slow."
+    },
+    {
+      "id": "133",
+      "at": "2026-09-24T17:08:45.120158Z",
+      "actorId": "CM-10",
+      "actorName": "Omar Haddad",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Emergency slot is $450 call-out. Need a manager OK for that."
+    },
+    {
+      "id": "132",
+      "at": "2026-09-23T13:08:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Omar, Thursday is too late for a Critical. Can we ask for the emergency slot?"
+    },
+    {
+      "id": "166",
+      "at": "2026-09-23T11:29:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "attached",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "chiller-service-log.pdf"
+    },
+    {
+      "id": "84",
+      "at": "2026-09-23T11:08:45.120158Z",
+      "actorId": "CM-10",
+      "actorName": "Omar Haddad",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Assigned to me because I called PolarServ from the front — they can come Thursday."
+    },
+    {
+      "id": "59",
+      "at": "2026-09-22T18:28:33.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "opened",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Blast chiller not pulling down — chili hit 88°F at the 2 h check"
+    },
+    {
+      "id": "165",
+      "at": "2026-09-22T16:29:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "attached",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "blast-chiller-e4.jpg"
+    },
+    {
+      "id": "131",
+      "at": "2026-09-22T13:08:45.120158Z",
+      "actorId": "CM-11",
+      "actorName": "Elena Petrova",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Thanks Samuel. Until this is fixed, no stockpot cooling in the blast chiller. Ice bath + wands only."
+    },
+    {
+      "id": "83",
+      "at": "2026-09-22T11:08:45.120158Z",
+      "actorId": "CM-06",
+      "actorName": "Samuel Okafor",
+      "action": "commented",
+      "target": "TKT-017",
+      "targetType": "ticket",
+      "detail": "Chili batch read 88°F at the 2 h check. Reheated to 165°F and split into 2-in pans with ice wands. Passed at 2 h and 6 h. Photo of the E4 er"
+    }
+  ],
+  "permissions": {
+    "changeStatus": false,
+    "lowerOrClose": false,
+    "raise": true,
+    "assign": false,
+    "comment": true,
+    "attach": true
+  }
+}

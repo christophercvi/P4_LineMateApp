@@ -1,0 +1,658 @@
+{
+  "scope": "All stations",
+  "station": null,
+  "mean": 5.5,
+  "rows": [
+    {
+      "station": "grill",
+      "open": 10,
+      "critical": 1,
+      "high": 4,
+      "medium": 4,
+      "low": 1,
+      "weighted": 25,
+      "share": 45.5,
+      "loadIndex": 1.82,
+      "flagged": true
+    },
+    {
+      "station": "pastry",
+      "open": 3,
+      "critical": 0,
+      "high": 0,
+      "medium": 2,
+      "low": 1,
+      "weighted": 5,
+      "share": 13.6,
+      "loadIndex": 0.55,
+      "flagged": false
+    },
+    {
+      "station": "prep",
+      "open": 6,
+      "critical": 1,
+      "high": 1,
+      "medium": 3,
+      "low": 1,
+      "weighted": 14,
+      "share": 27.3,
+      "loadIndex": 1.09,
+      "flagged": false
+    },
+    {
+      "station": "foh",
+      "open": 3,
+      "critical": 0,
+      "high": 0,
+      "medium": 1,
+      "low": 2,
+      "weighted": 4,
+      "share": 13.6,
+      "loadIndex": 0.55,
+      "flagged": false
+    }
+  ],
+  "perDay": [
+    {
+      "date": "2026-09-02",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-02",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-02",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-02",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-03",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-03",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-03",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-03",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-04",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-04",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-04",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-04",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-05",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-05",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-05",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-05",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-06",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-06",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-06",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-06",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-07",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-08",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-09",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-09",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-09",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-09",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-10",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-10",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-10",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-10",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-11",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-11",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-11",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-11",
+      "station": "Front of House",
+      "count": 1
+    },
+    {
+      "date": "2026-09-12",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-12",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-12",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-12",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-13",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-13",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-13",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-13",
+      "station": "Front of House",
+      "count": 1
+    },
+    {
+      "date": "2026-09-14",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-14",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-14",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-14",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-15",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-15",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-15",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-15",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-16",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-16",
+      "station": "Pastry",
+      "count": 1
+    },
+    {
+      "date": "2026-09-16",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-16",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-17",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-17",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-17",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-17",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-18",
+      "station": "Front of House",
+      "count": 1
+    },
+    {
+      "date": "2026-09-19",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-19",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-19",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-19",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-20",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-20",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-20",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-20",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-21",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-21",
+      "station": "Pastry",
+      "count": 1
+    },
+    {
+      "date": "2026-09-21",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-21",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-22",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-22",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-22",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-22",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-23",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-23",
+      "station": "Pastry",
+      "count": 1
+    },
+    {
+      "date": "2026-09-23",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-23",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-24",
+      "station": "Grill",
+      "count": 0
+    },
+    {
+      "date": "2026-09-24",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-24",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-24",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-25",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-25",
+      "station": "Pastry",
+      "count": 1
+    },
+    {
+      "date": "2026-09-25",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-25",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-26",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-26",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-26",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-26",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-27",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-27",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-27",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-27",
+      "station": "Front of House",
+      "count": 1
+    },
+    {
+      "date": "2026-09-28",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-28",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-28",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-28",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-09-29",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-29",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-29",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-09-29",
+      "station": "Front of House",
+      "count": 1
+    },
+    {
+      "date": "2026-09-30",
+      "station": "Grill",
+      "count": 1
+    },
+    {
+      "date": "2026-09-30",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-09-30",
+      "station": "Prep",
+      "count": 1
+    },
+    {
+      "date": "2026-09-30",
+      "station": "Front of House",
+      "count": 0
+    },
+    {
+      "date": "2026-10-01",
+      "station": "Grill",
+      "count": 2
+    },
+    {
+      "date": "2026-10-01",
+      "station": "Pastry",
+      "count": 0
+    },
+    {
+      "date": "2026-10-01",
+      "station": "Prep",
+      "count": 0
+    },
+    {
+      "date": "2026-10-01",
+      "station": "Front of House",
+      "count": 0
+    }
+  ],
+  "readOnly": false
+}

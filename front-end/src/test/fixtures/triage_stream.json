@@ -1,0 +1,311 @@
+[
+  [
+    "meta",
+    {
+      "model": "qwen3:4b-q4_K_M",
+      "station": "grill",
+      "runId": "RUN-0003"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "load_tickets",
+      "title": "Load open tickets",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "load_tickets",
+      "title": "Load open tickets",
+      "status": "success",
+      "description": "10 open · Grill · 1 critical",
+      "durationMs": 7
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "rank",
+      "title": "Score priority",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "rank",
+      "title": "Score priority",
+      "status": "success",
+      "description": "Top: TKT-001 (score 109.0)",
+      "durationMs": 18
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "enrich_with_docs",
+      "title": "Check linked SOPs & rosters",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "enrich_with_docs",
+      "title": "Check linked SOPs & rosters",
+      "status": "success",
+      "description": "4 linked SOPs · 2 stale · roster via MCP",
+      "durationMs": 4018
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "check_supplies",
+      "title": "Check supplier stock",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "check_supplies",
+      "title": "Check supplier stock",
+      "status": "success",
+      "description": "2 of 2 items below par · Coastal Restaurant Supply (MCP)",
+      "durationMs": 1967
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "detect_risks",
+      "title": "Detect risks",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "detect_risks",
+      "title": "Detect risks",
+      "status": "success",
+      "description": "1 ownership mismatch · 1 combined · 2 stale sop · 2 shortage · 1 staffing",
+      "durationMs": 8
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "propose_actions",
+      "title": "Propose actions",
+      "status": "loading"
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "propose_actions",
+      "title": "Propose actions",
+      "status": "success",
+      "description": "0 new · 3 already waiting · Pydantic AI",
+      "durationMs": 52697
+    }
+  ],
+  [
+    "node",
+    {
+      "node": "summarize",
+      "title": "Write the summary",
+      "status": "loading"
+    }
+  ],
+  [
+    "content",
+    "- TKT-001 [critical, in_progress] Hood suppression inspection overdue, linked to stale SOP DOC-SOP-005, needs"
+  ],
+  [
+    "content",
+    " immediate attention to prevent safety risk.  \n- TKT-012 [high, in_progress] Cold spot on flat-top, linked to"
+  ],
+  [
+    "content",
+    " same stale SOP DOC-SOP-005, requires cleaning and inspection to ensure food safety.  \n- TKT-005 [high, open]"
+  ],
+  [
+    "content",
+    " Fryer oil shortage with delivery delay, stock below par, needs urgent restock to avoid service interruption."
+  ],
+  [
+    "content",
+    "  \n- TKT-014 [high, open] Grill short-staffed for Friday dinner, staffing gap impacts service capacity and qu"
+  ],
+  [
+    "content",
+    "ality.  \n- Actions waiting for the Kitchen Manager: Reassign TKT-009, order grill brushes, and order canola o"
+  ],
+  ["content", "il."],
+  [
+    "node",
+    {
+      "node": "summarize",
+      "title": "Write the summary",
+      "status": "success",
+      "description": "173 tokens",
+      "durationMs": 71917
+    }
+  ],
+  [
+    "result",
+    {
+      "runId": "RUN-0003",
+      "summary": "- TKT-001 [critical, in_progress] Hood suppression inspection overdue, linked to stale SOP DOC-SOP-005, needs immediate attention to prevent safety risk.  \n- TKT-012 [high, in_progress] Cold spot on flat-top, linked to same stale SOP DOC-SOP-005, requires cleaning and inspection to ensure food safety.  \n- TKT-005 [high, open] Fryer oil shortage with delivery delay, stock below par, needs urgent restock to avoid service interruption.  \n- TKT-014 [high, open] Grill short-staffed for Friday dinner, staffing gap impacts service capacity and quality.  \n- Actions waiting for the Kitchen Manager: Reassign TKT-009, order grill brushes, and order canola oil.",
+      "ranked": [
+        {
+          "ticketId": "TKT-001",
+          "score": 109.0,
+          "reasons": ["Critical priority", "linked SOP stale (DOC-SOP-005)"]
+        },
+        {
+          "ticketId": "TKT-012",
+          "score": 70.5,
+          "reasons": ["High priority", "linked SOP stale (DOC-SOP-005)"]
+        },
+        {
+          "ticketId": "TKT-009",
+          "score": 67.5,
+          "reasons": ["High priority", "assigned outside the owning station"]
+        },
+        {
+          "ticketId": "TKT-005",
+          "score": 64.0,
+          "reasons": ["High priority", "stock below par"]
+        },
+        {
+          "ticketId": "TKT-014",
+          "score": 60.5,
+          "reasons": ["High priority"]
+        },
+        {
+          "ticketId": "TKT-010",
+          "score": 37.5,
+          "reasons": ["Medium priority", "blocked", "open 9 days"]
+        },
+        {
+          "ticketId": "TKT-007",
+          "score": 33.0,
+          "reasons": ["Medium priority"]
+        },
+        {
+          "ticketId": "TKT-041",
+          "score": 30.0,
+          "reasons": ["Medium priority"]
+        }
+      ],
+      "risks": [
+        {
+          "ticketId": "TKT-009",
+          "kind": "ownership_mismatch",
+          "message": "Assigned to Front of House but DOC-SOP-001 is owned by Grill"
+        },
+        {
+          "ticketId": "TKT-031",
+          "kind": "combined",
+          "message": "Assigned to Grill but DOC-SOP-006 is owned by Front of House and is overdue for review"
+        },
+        {
+          "ticketId": "TKT-001",
+          "kind": "stale_sop",
+          "message": "DOC-SOP-005 Grill Deep Clean & Degreasing last reviewed 300 days ago"
+        },
+        {
+          "ticketId": "TKT-012",
+          "kind": "stale_sop",
+          "message": "DOC-SOP-005 Grill Deep Clean & Degreasing last reviewed 300 days ago"
+        },
+        {
+          "ticketId": "TKT-005",
+          "kind": "shortage",
+          "message": "Canola frying oil, 35 lb: 1 of 4 case on hand, 2-day lead time"
+        },
+        {
+          "ticketId": "TKT-015",
+          "kind": "shortage",
+          "message": "Grill brush, 18 in stainless: 2 of 6 each on hand, 2-day lead time"
+        },
+        {
+          "ticketId": "TKT-014",
+          "kind": "staffing",
+          "message": "Fri PM short by 2; cover options: Deshawn Carter, Priya Nair"
+        }
+      ],
+      "proposedApprovalIds": ["APR-106", "APR-107", "APR-104"]
+    }
+  ],
+  [
+    "interrupt",
+    {
+      "approvalId": "APR-106",
+      "kind": "reassign_ticket",
+      "title": "Reassign TKT-009 to Priya Nair",
+      "summary": "Assigned to Front of House but DOC-SOP-001 is owned by Grill. Reassigning the ticket to the correct person ensures proper documentation and workflow.",
+      "payload": {
+        "ticketId": "TKT-009",
+        "fromAssigneeId": "CM-09",
+        "toAssigneeId": "CM-02",
+        "reason": "Linked document is owned by another station"
+      },
+      "canApprove": false
+    }
+  ],
+  [
+    "interrupt",
+    {
+      "approvalId": "APR-107",
+      "kind": "draft_supply_order",
+      "title": "Order 7 × Grill brush, 18 in stainless",
+      "summary": "2 each on hand against a par of 6. 7 at $14.75 = $103.25, delivered 2026-10-03. Ordering the grill brush is necessary for maintenance and service efficiency.",
+      "payload": {
+        "supplier": "Coastal Restaurant Supply",
+        "item": "Grill brush, 18 in stainless",
+        "sku": "GB-WIRE-18",
+        "quantity": 7,
+        "unit": "each",
+        "unitPrice": 14.75,
+        "neededBy": "2026-10-03",
+        "ticketId": "TKT-015"
+      },
+      "canApprove": false
+    }
+  ],
+  [
+    "interrupt",
+    {
+      "approvalId": "APR-104",
+      "kind": "draft_supply_order",
+      "title": "Order 6 cases of canola frying oil",
+      "summary": "Stock is 1 case (par 4) after a short delivery. Needed before Saturday dinner.",
+      "payload": {
+        "supplier": "Coastal Restaurant Supply",
+        "item": "Canola frying oil, 35 lb",
+        "sku": "CAN-OIL-35",
+        "quantity": 6,
+        "unit": "case",
+        "unitPrice": 42.5,
+        "neededBy": "@agod:-2",
+        "ticketId": "TKT-005"
+      },
+      "canApprove": false
+    }
+  ],
+  [
+    "done",
+    {
+      "elapsed_ms": 130681,
+      "run_id": "RUN-0003"
+    }
+  ]
+]

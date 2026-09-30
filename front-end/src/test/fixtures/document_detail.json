@@ -1,0 +1,116 @@
+{
+  "document": {
+    "id": "DOC-SOP-003",
+    "title": "Cooling Hot Foods (Two-Stage Cooling)",
+    "category": "sop",
+    "station": "prep",
+    "ownerId": "CM-06",
+    "createdAt": "2025-04-29T11:29:45.120158Z",
+    "lastReviewed": "2026-02-03T17:29:45.120158Z",
+    "source": "seed",
+    "uploadedBy": "CM-06",
+    "fileName": "cooling-hot-foods-two-stage-cooling.pdf",
+    "fileKind": "pdf",
+    "fileBytes": 88183,
+    "fileUrl": "/api/files/FA-DOC-SOP-003?exp=1790851390&sig=b86e4d277a8db9c8968ee7f629555e59",
+    "summary": "135°F → 70°F within 2 h, then 70°F → 41°F within a further 4 h (6 h total).",
+    "tags": ["cooling", "food-safety", "blast-chiller", "stock"],
+    "status": "ready",
+    "version": 2,
+    "chunkCount": 19,
+    "reviewHistory": [
+      {
+        "at": "2026-02-03T17:29:45.120158Z",
+        "by": "CM-06",
+        "note": "Reviewed — no changes needed"
+      },
+      {
+        "at": "2025-04-29T11:29:45.120158Z",
+        "by": "CM-06",
+        "note": "Initial version published"
+      }
+    ],
+    "stale": true,
+    "daysSinceReview": 240,
+    "body": "# Cooling Hot Foods (Two-Stage Cooling)\n\n> Illustrative content — verify against your local health code.\n\n## Purpose & Scope\n- Document owner: Samuel Okafor (Sous Chef, Prep)\n- This SOP is for the Prep station. It applies to soups, stocks, sauces, braises, rice, beans, and other hot TCS foods we cool for later service.\n- Goal: Move food through the danger zone fast and safely, without sacrificing quality.\n\n## Limits\n| Stage | From | To | Time limit |\n|---|---|---|---|\n| 1 | 135°F | 70°F | **2 hours** |\n| 2 | 70°F | 41°F | a further **4 hours** (6 h in total) |\n\nIf stage 1 is missed, **reheat to 165°F once and restart cooling**, or discard.\n\n## Tools and Setup\n- Shallow hotel pans: 2 in for liquids; 3 in for thick foods.\n- Sheet trays with racks and parchment (for rice and shallow spread items).\n- Ice bath station: food-safe bus tubs, ice, cold water, salt (optional to drop temp faster).\n- Ice wands (frozen paddles) for stockpots and buckets; keep backups frozen.\n- Blast chiller, hard chill cycle; sanitize probe thermometer before and after use.\n- Calibrated digital probe thermometers; alcohol wipes; sanitizer bucket and towels.\n- Labels and tape for product name, date, and time started cooling.\n- Space in walk-in cleared before you start; wire racks for airflow.\n\n## Methods (use at least two together)\n1. **Divide** — portion into hotel pans no deeper than **2 in** (liquids) or **3 in** (thick foods).\n2. **Ice bath** — set the pans in ice water that reaches the level of the food; stir every 15 min.\n3. **Ice wands** — frozen paddles in stockpots and buckets; replace as they melt.\n4. **Blast chiller** — load at 135°F or below, probe in the thickest item, run the *hard chill* cycle.\n\nNotes:\n- Combine methods. Example: Divide + ice bath + stir; or Divide + blast chill + occasional stirring.\n- Stirring moves hot center to surface; use clean, sanitized tools each time.\n- Keep lids ajar or uncovered during cooling until food is below 41°F to vent steam.\n\n## Step-by-Step Cooling Procedure\n1. Verify finish temp at or above 135°F before starting cooling. Kill the heat.\n2. Divide immediately:\n   - Liquids (soups, stocks, sauces): transfer to 2 in hotel pans.\n   - Thick foods (chili, stews, braises): 3 in hotel pans max. Spread level.\n   - Rice/starches: spread in a thin layer (≤ 2 in) on sheet trays; move to cooling right away.\n3. Start two methods at once:\n   - Option A: Set pans in an ice bath up to food level. Add a pinch of salt to the bath to drop temp faster. Stir every 15 min.\n   - Option B: Insert sanitized ice wands in deep containers; move the wand around gently as you stir. Swap wands as they melt.\n   - Option C: Load the blast chiller at 135°F or below. Insert the chiller probe into the thickest item. Run the hard chill cycle.\n4. Maximize airflow:\n   - Do not stack hot pans. Leave space between pans. Use speed racks.\n   - In the walk-in or chiller, avoid plastic wrap or tight lids until food is below 41°F.\n5. Monitor temps:\n   - Temp at 0 h (immediately as cooling starts).\n   - Temp at 2 h (must be 70°F or lower).\n   - Temp at 6 h (must be 41°F or lower).\n6. Finish and store:\n   - Once ≤ 41°F, cover, label, and store on assigned shelf.\n   - Keep raw/ready-to-eat separation. Do not store cooling food above raw proteins.\n\n## Never\n- Never put a full stockpot into the walk-in to cool.\n- Never cover tightly until the food is below 41°F.\n\n## Logging\nRecord the temperature at **0 h, 2 h and 6 h** on the cooling log (clipboard by the blast chiller). Missing entries = discard.\n\n## Rice and starches\nCooked rice follows the same limits. Spread in a thin layer (≤ 2 in) on sheet trays and start cooling immediately — never hold cooked rice at room temperature.\n\n## Troubleshooting and What To Do If\n- Stage 1 miss (above 70°F at 2 h):\n  - If safe and quality permits, return to a pot, reheat to 165°F once and restart cooling using two methods. If not possible, discard.\n- Too slow in ice bath:\n  - Add more ice. Drain and refresh bath so ice water reaches food level. Stir more often. Split into more pans.\n- Blast chiller not dropping fast:\n  - Reduce load; don’t overcrowd. Use shallower pans. Verify probe is in the thickest point. Combine with ice bath first, then finish in chiller.\n- Thick foods still hot in the middle:\n  - Increase surface area: transfer to extra pans; use ice wands while stirring. Fold in a small amount of ice if the recipe allows (soups/sauces).\n- Log gaps or unreadable entries:\n  - If you can’t verify 0 h, 2 h, and 6 h with recorded temps, discard.\n- Probe reads oddly:\n  - Re-sanitize and recheck in a different spot. Calibrate if needed. When in doubt, use a second thermometer.\n\n## Food Safety and Quality Notes\n- Keep hands, tools, and pans sanitized to avoid recontamination during cooling.\n- Do not cool at room temp. Cooling must start immediately with active methods.\n- Label every pan with product name and time cooling started. Move finished (≤ 41°F) items to their final shelf promptly.\n- Reheat only once if stage 1 is missed. Do not reheat multiple times to “save” a batch.\n- Texture and fat: Skim fat caps after cooling; don’t let a thick fat layer insulate heat during cooling. Stir to break surface film.\n",
+    "citedLast7d": 15
+  },
+  "chunks": [
+    {
+      "index": 0,
+      "tokens": 21,
+      "heading": "Cooling Hot Foods (Two-Stage Cooling)",
+      "preview": "Cooling Hot Foods (Two-Stage Cooling)\nIllustrative content — verify against your local health code.",
+      "sha": "ad47ee4b278c578f"
+    },
+    {
+      "index": 1,
+      "tokens": 82,
+      "heading": "Purpose & Scope  Document owner: Samuel Okafor (Sous Chef, Prep)",
+      "preview": "Cooling Hot Foods (Two-Stage Cooling) - Purpose & Scope  Document owner: Samuel Okafor (Sous Chef, Prep)\nThis SOP is for the Prep station. It applies to soups, stocks, sauces, braises, rice,\nbeans, and other hot TCS foods we cool for later service.\n- Goal: Move food through the ",
+      "sha": "c8fd1ca9070d35f7"
+    },
+    {
+      "index": 2,
+      "tokens": 29,
+      "heading": "Time limit",
+      "preview": "Cooling Hot Foods (Two-Stage Cooling) - Time limit\n1 2\n135°F 70°F\n70°F 41°F",
+      "sha": "86729a19090f4a5f"
+    }
+  ],
+  "relatedTickets": [
+    {
+      "id": "TKT-017",
+      "title": "Blast chiller not pulling down — chili hit 88°F at the 2 h check",
+      "description": "Blast chiller shows error E4 and cannot bring a 6 gal chili batch below 70°F within 2 hours. Batch was reheated and re-cooled with ice wands. Until fixed, all cooling must use ice baths + ice wands in 2-in pans. Vendor visit needed.",
+      "priority": "critical",
+      "status": "in_progress",
+      "station": "prep",
+      "assigneeId": "CM-10",
+      "reporterId": "CM-06",
+      "relatedDocId": "DOC-SOP-003",
+      "createdAt": "2026-09-22T18:28:33.120158Z",
+      "updatedAt": "2026-10-01T07:08:45.120158Z",
+      "tags": ["food-safety", "blast-chiller", "equipment"],
+      "commentCount": 7,
+      "attachmentCount": 2,
+      "docStale": true,
+      "mismatch": true
+    },
+    {
+      "id": "TKT-035",
+      "title": "Cooling log missing 6 h entries",
+      "description": "Log retraining done at pre-shift.",
+      "priority": "medium",
+      "status": "resolved",
+      "station": "prep",
+      "assigneeId": "CM-01",
+      "reporterId": "CM-11",
+      "relatedDocId": "DOC-SOP-003",
+      "createdAt": "2026-09-15T17:34:33.120158Z",
+      "updatedAt": "2026-09-17T15:08:45.120158Z",
+      "tags": ["food-safety", "cooling"],
+      "commentCount": 2,
+      "attachmentCount": 0,
+      "docStale": true,
+      "mismatch": false
+    }
+  ],
+  "jobs": [
+    {
+      "id": "JOB-0021",
+      "docId": "DOC-SOP-003",
+      "fileName": "cooling-hot-foods-two-stage-cooling.pdf",
+      "collection": "documents__nomic-embed-text-v1.5",
+      "stage": "ready",
+      "progress": 100,
+      "startedAt": "2026-10-01T09:08:45.982076Z",
+      "finishedAt": "2026-10-01T09:08:46.732538Z",
+      "chunks": 19,
+      "error": null,
+      "requestedBy": "system",
+      "requestedByName": "LineMate"
+    }
+  ],
+  "embeddingModel": "nomic-embed-text (v1.5)"
+}

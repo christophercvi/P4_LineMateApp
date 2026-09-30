@@ -1,0 +1,320 @@
+{
+  "tools": [
+    {
+      "name": "search_documents",
+      "description": "Search the kitchen knowledge base (SOPs, recipes, onboarding, incident reports) and return the best matching documents with review age.",
+      "access": "read",
+      "requiresApproval": false,
+      "roles": ["line_cook", "sous_chef", "kitchen_manager", "admin", "service"],
+      "inputSchema": {
+        "properties": {
+          "query": {
+            "title": "Query",
+            "type": "string"
+          },
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Category"
+          },
+          "station": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Station"
+          },
+          "k": {
+            "default": 4,
+            "title": "K",
+            "type": "integer"
+          }
+        },
+        "required": ["query"],
+        "title": "search_documentsArguments",
+        "type": "object"
+      },
+      "sampleInput": {
+        "query": "how fast must a stockpot cool",
+        "k": 2
+      },
+      "callsLast7d": 185
+    },
+    {
+      "name": "list_open_tickets",
+      "description": "List open tickets (open, in progress, blocked), highest priority first.",
+      "access": "read",
+      "requiresApproval": false,
+      "roles": ["sous_chef", "kitchen_manager", "admin", "service"],
+      "inputSchema": {
+        "properties": {
+          "station": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Station"
+          },
+          "min_priority": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Min Priority"
+          },
+          "limit": {
+            "default": 20,
+            "title": "Limit",
+            "type": "integer"
+          }
+        },
+        "title": "list_open_ticketsArguments",
+        "type": "object"
+      },
+      "sampleInput": {
+        "min_priority": "critical"
+      },
+      "callsLast7d": 96
+    },
+    {
+      "name": "workload_analytics",
+      "description": "Open-ticket load per station, normalised by crew size; flags overloaded stations.",
+      "access": "read",
+      "requiresApproval": false,
+      "roles": ["sous_chef", "kitchen_manager", "admin", "service"],
+      "inputSchema": {
+        "properties": {
+          "include_resolved": {
+            "default": false,
+            "title": "Include Resolved",
+            "type": "boolean"
+          }
+        },
+        "title": "workload_analyticsArguments",
+        "type": "object"
+      },
+      "sampleInput": {},
+      "callsLast7d": 41
+    },
+    {
+      "name": "create_ticket",
+      "description": "Ask for a new ticket. Creates an approval request; the ticket is created once the Kitchen Manager approves.",
+      "access": "write",
+      "requiresApproval": true,
+      "roles": ["line_cook", "sous_chef", "kitchen_manager", "service"],
+      "inputSchema": {
+        "properties": {
+          "title": {
+            "title": "Title",
+            "type": "string"
+          },
+          "station": {
+            "title": "Station",
+            "type": "string"
+          },
+          "description": {
+            "default": "",
+            "title": "Description",
+            "type": "string"
+          },
+          "priority": {
+            "default": "medium",
+            "title": "Priority",
+            "type": "string"
+          },
+          "related_doc_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Related Doc Id"
+          }
+        },
+        "required": ["title", "station"],
+        "title": "create_ticketArguments",
+        "type": "object"
+      },
+      "sampleInput": {
+        "title": "Ice machine leaking",
+        "priority": "medium",
+        "station": "prep"
+      },
+      "callsLast7d": 12
+    },
+    {
+      "name": "draft_supply_order",
+      "description": "Draft a supply order from the supplier catalogue. Creates an approval request; nothing is ordered until the Kitchen Manager approves.",
+      "access": "write",
+      "requiresApproval": true,
+      "roles": ["sous_chef", "kitchen_manager", "service"],
+      "inputSchema": {
+        "properties": {
+          "sku": {
+            "title": "Sku",
+            "type": "string"
+          },
+          "quantity": {
+            "title": "Quantity",
+            "type": "integer"
+          },
+          "supplier": {
+            "default": "Coastal Restaurant Supply",
+            "title": "Supplier",
+            "type": "string"
+          },
+          "needed_by": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Needed By"
+          },
+          "ticket_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Ticket Id"
+          }
+        },
+        "required": ["sku", "quantity"],
+        "title": "draft_supply_orderArguments",
+        "type": "object"
+      },
+      "sampleInput": {
+        "supplier": "Coastal Restaurant Supply",
+        "sku": "CAN-OIL-35",
+        "quantity": 6,
+        "ticket_id": "TKT-005"
+      },
+      "callsLast7d": 3
+    },
+    {
+      "name": "escalate_incident",
+      "description": "Escalate an incident ticket to critical and notify the Kitchen Manager and station lead. Creates an approval request.",
+      "access": "write",
+      "requiresApproval": true,
+      "roles": ["sous_chef", "kitchen_manager", "service"],
+      "inputSchema": {
+        "properties": {
+          "ticket_id": {
+            "title": "Ticket Id",
+            "type": "string"
+          },
+          "severity": {
+            "default": "food_safety",
+            "title": "Severity",
+            "type": "string"
+          },
+          "hold_product": {
+            "default": false,
+            "title": "Hold Product",
+            "type": "boolean"
+          },
+          "note": {
+            "default": "",
+            "title": "Note",
+            "type": "string"
+          }
+        },
+        "required": ["ticket_id"],
+        "title": "escalate_incidentArguments",
+        "type": "object"
+      },
+      "sampleInput": {
+        "ticket_id": "TKT-017",
+        "severity": "food_safety",
+        "hold_product": true
+      },
+      "callsLast7d": 2
+    }
+  ],
+  "servers": [
+    {
+      "id": "supplier-inventory",
+      "name": "Supplier Inventory",
+      "url": "stdio: python -m back_end.mcp_external.supplier_server",
+      "transport": "stdio",
+      "status": "connected",
+      "lastSeen": "2026-10-01T09:43:11.953709Z",
+      "latencyMs": 1739,
+      "tools": [
+        {
+          "name": "check_stock",
+          "description": "Look up stock for a SKU or a plain-language item (e.g. 'fryer oil'). Returns on-hand vs par.",
+          "usedBy": "triage → check_supplies"
+        },
+        {
+          "name": "price_quote",
+          "description": "Quote a quantity of a SKU with the earliest delivery date. Does not place an order.",
+          "usedBy": "triage → propose_actions"
+        },
+        {
+          "name": "below_par",
+          "description": "List catalogue items that are below par.",
+          "usedBy": "triage → check_supplies"
+        }
+      ]
+    },
+    {
+      "id": "shift-scheduler",
+      "name": "Shift Scheduler",
+      "url": "stdio: python -m back_end.mcp_external.shift_server",
+      "transport": "stdio",
+      "status": "connected",
+      "lastSeen": "2026-10-01T09:43:11.974576Z",
+      "latencyMs": 1760,
+      "tools": [
+        {
+          "name": "get_roster",
+          "description": "Who is scheduled at a station on a day ('mon'..'sun') and shift ('AM' or 'PM').",
+          "usedBy": "triage → enrich_with_docs"
+        },
+        {
+          "name": "find_cover",
+          "description": "Crew who are off that shift and trained for the station, best options first.",
+          "usedBy": "triage → propose_actions"
+        }
+      ]
+    }
+  ],
+  "tokens": null,
+  "endpoint": "http://localhost:8000/mcp"
+}

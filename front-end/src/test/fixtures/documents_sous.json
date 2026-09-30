@@ -1,0 +1,845 @@
+{
+  "items": [
+    {
+      "id": "DOC-ONB-007",
+      "title": "Fry Station Quick Reference",
+      "category": "onboarding",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2026-10-01T09:32:54.590931Z",
+      "lastReviewed": "2026-10-01T09:32:54.590931Z",
+      "source": "upload",
+      "uploadedBy": "u-priya",
+      "fileName": "fry-station-quick-reference.pptx",
+      "fileKind": "pptx",
+      "fileBytes": 39124,
+      "fileUrl": "/api/files/fa_edd290106ce24b76?exp=1790851390&sig=c4d6bb7644de7d80fae7430207e624fb",
+      "summary": "Fry station temps, loads, oil care and fire safety for new cooks.",
+      "tags": [],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 12,
+      "reviewHistory": [
+        {
+          "at": "2026-10-01T09:32:54.590931Z",
+          "by": "CM-02",
+          "note": "Initial version uploaded"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 0,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-INC-006",
+      "title": "Incident: Fryer Oil Delivery Short",
+      "category": "incident",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2026-09-26T11:29:45.120158Z",
+      "lastReviewed": "2026-09-26T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "incident-fryer-oil-delivery-short.jpg",
+      "fileKind": "jpg",
+      "fileBytes": 536702,
+      "fileUrl": "/api/files/FA-DOC-INC-006?exp=1790851390&sig=795214d3e1f835d1820edf6951890024",
+      "summary": "Delivery arrived with 2 of 6 cases of frying oil; stock now below par.",
+      "tags": ["supply", "fryer", "oil"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 3,
+      "reviewHistory": [
+        {
+          "at": "2026-09-26T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 5,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-INC-004",
+      "title": "Incident: Blast Chiller Temperature Excursion",
+      "category": "incident",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2026-09-21T11:29:45.120158Z",
+      "lastReviewed": "2026-09-21T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "incident-blast-chiller-temperature-excursion.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 87856,
+      "fileUrl": "/api/files/FA-DOC-INC-004?exp=1790851390&sig=bb29b726fd2ea265f6ff45b331ef441d",
+      "summary": "Chili batch reached only 88°F at the 2 h check; reheated to 165°F and re-cooled.",
+      "tags": ["blast-chiller", "cooling", "food-safety"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 12,
+      "reviewHistory": [
+        {
+          "at": "2026-09-21T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 10,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-INC-003",
+      "title": "Incident: Allergen Near-Miss, Table 12",
+      "category": "incident",
+      "station": "foh",
+      "ownerId": "CM-09",
+      "createdAt": "2026-07-03T11:29:45.120158Z",
+      "lastReviewed": "2026-07-03T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-09",
+      "fileName": "incident-allergen-near-miss-table-12.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 73986,
+      "fileUrl": "/api/files/FA-DOC-INC-003?exp=1790851390&sig=0c273a35156d238c8ee1e1cd875b19ef",
+      "summary": "Tree-nut garnish nearly served to an allergic guest; caught by expo.",
+      "tags": ["allergen", "near-miss"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 13,
+      "reviewHistory": [
+        {
+          "at": "2026-07-03T11:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 90,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-ONB-006",
+      "title": "Opening & Closing Checklists",
+      "category": "onboarding",
+      "station": "foh",
+      "ownerId": "CM-11",
+      "createdAt": "2026-03-15T11:29:45.120158Z",
+      "lastReviewed": "2026-09-16T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-11",
+      "fileName": "opening-closing-checklists.xlsx",
+      "fileKind": "xlsx",
+      "fileBytes": 11155,
+      "fileUrl": "/api/files/FA-DOC-ONB-006?exp=1790851390&sig=69b53f0ec5879360fa072c58e6f3bb15",
+      "summary": "Per-station checklists for opening and closing, including temperature logs.",
+      "tags": ["onboarding", "checklist"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 9,
+      "reviewHistory": [
+        {
+          "at": "2026-09-16T17:29:45.120158Z",
+          "by": "CM-11",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2026-03-15T11:29:45.120158Z",
+          "by": "CM-11",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 15,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-REC-003",
+      "title": "Brown Butter Financiers",
+      "category": "recipe",
+      "station": "pastry",
+      "ownerId": "CM-04",
+      "createdAt": "2026-01-24T11:29:45.120158Z",
+      "lastReviewed": "2026-08-17T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-04",
+      "fileName": "brown-butter-financiers.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 81558,
+      "fileUrl": "/api/files/FA-DOC-REC-003?exp=1790851390&sig=7259e9c6c67f7b0393cfa61b53dd9f89",
+      "summary": "Almond-flour tea cakes; batter rests overnight; bake 400°F for 11 min.",
+      "tags": ["pastry", "nuts", "allergen"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 24,
+      "reviewHistory": [
+        {
+          "at": "2026-08-17T17:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2026-01-24T11:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 45,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-INC-002",
+      "title": "Incident: Minor Burn at Fry Station",
+      "category": "incident",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2026-01-14T11:29:45.120158Z",
+      "lastReviewed": "2026-01-14T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "incident-minor-burn-at-fry-station.docx",
+      "fileKind": "docx",
+      "fileBytes": 40174,
+      "fileUrl": "/api/files/FA-DOC-INC-002?exp=1790851390&sig=0bed57a00d8d54e86a109a0164fb39e5",
+      "summary": "Oil splash while carrying a pot of hot oil; first aid given; caddy purchased.",
+      "tags": ["safety", "fryer", "injury"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 10,
+      "reviewHistory": [
+        {
+          "at": "2026-01-14T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 260,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-SOP-004",
+      "title": "Walk-in Cooler Temperature Alarm Response",
+      "category": "sop",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-12-15T11:29:45.120158Z",
+      "lastReviewed": "2026-06-03T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "walk-in-cooler-temperature-alarm-response.docx",
+      "fileKind": "docx",
+      "fileBytes": 40401,
+      "fileUrl": "/api/files/FA-DOC-SOP-004?exp=1790851390&sig=74489b6a1c37b676efe9aad240ed77e6",
+      "summary": "Alarm at 41°F: check door, log, move TCS food if above 41°F for 4 h.",
+      "tags": ["walk-in", "refrigeration", "food-safety", "equipment"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 10,
+      "reviewHistory": [
+        {
+          "at": "2026-06-03T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-12-15T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 120,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-REC-002",
+      "title": "Steak Frites with Chimichurri",
+      "category": "recipe",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2025-12-05T11:29:45.120158Z",
+      "lastReviewed": "2026-08-02T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "steak-frites-with-chimichurri.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 79475,
+      "fileUrl": "/api/files/FA-DOC-REC-002?exp=1790851390&sig=3558cf6abfd279bc62f8901aa4ec4350",
+      "summary": "Hanger steak, double-fried frites, chimichurri made fresh each shift.",
+      "tags": ["protein", "fryer", "sauce"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 19,
+      "reviewHistory": [
+        {
+          "at": "2026-08-02T17:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-12-05T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 60,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-SOP-002",
+      "title": "Allergen Handling & Station Separation",
+      "category": "sop",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-11-05T11:29:45.120158Z",
+      "lastReviewed": "2026-09-06T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "allergen-handling-station-separation.docx",
+      "fileKind": "docx",
+      "fileBytes": 40677,
+      "fileUrl": "/api/files/FA-DOC-SOP-002?exp=1790851390&sig=dbe3645e78751ec5a894a50a4032826b",
+      "summary": "Purple boards and tools, dedicated fryer for gluten-free, ticket flag “ALLERGY”.",
+      "tags": ["allergen", "food-safety"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 10,
+      "reviewHistory": [
+        {
+          "at": "2026-09-06T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-11-05T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 25,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-ONB-003",
+      "title": "Pastry Station Orientation",
+      "category": "onboarding",
+      "station": "pastry",
+      "ownerId": "CM-04",
+      "createdAt": "2025-11-05T11:29:45.120158Z",
+      "lastReviewed": "2026-07-23T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-04",
+      "fileName": "pastry-station-orientation.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 73196,
+      "fileUrl": "/api/files/FA-DOC-ONB-003?exp=1790851390&sig=8d2ee6d93dcbc04d636716bee0dfc151",
+      "summary": "Scales, allergen trays, proofer and oven schedule for new pastry cooks.",
+      "tags": ["onboarding", "pastry"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 18,
+      "reviewHistory": [
+        {
+          "at": "2026-07-23T17:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-11-05T11:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 70,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-REC-005",
+      "title": "Roasted Chicken Stock",
+      "category": "recipe",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-10-06T11:29:45.120158Z",
+      "lastReviewed": "2026-09-11T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "roasted-chicken-stock.docx",
+      "fileKind": "docx",
+      "fileBytes": 40141,
+      "fileUrl": "/api/files/FA-DOC-REC-005?exp=1790851390&sig=7037d5dfbbbd13bc2e8cd1381db18cb6",
+      "summary": "40 qt batch, 6 h simmer, cool with ice wands per the cooling SOP.",
+      "tags": ["stock", "batch", "cooling"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 10,
+      "reviewHistory": [
+        {
+          "at": "2026-09-11T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-10-06T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 20,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-ONB-004",
+      "title": "Front of House Service Standards",
+      "category": "onboarding",
+      "station": "foh",
+      "ownerId": "CM-09",
+      "createdAt": "2025-10-06T11:29:45.120158Z",
+      "lastReviewed": "2026-06-23T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-09",
+      "fileName": "front-of-house-service-standards.docx",
+      "fileKind": "docx",
+      "fileBytes": 40638,
+      "fileUrl": "/api/files/FA-DOC-ONB-004?exp=1790851390&sig=94af5eb5c01f93ae88e7ad3010a8f9aa",
+      "summary": "Greeting within 60 s, allergy question at every table, expo etiquette.",
+      "tags": ["onboarding", "foh", "allergen"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 9,
+      "reviewHistory": [
+        {
+          "at": "2026-06-23T17:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-10-06T11:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 100,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-SOP-001",
+      "title": "Fryer Oil Filtering & Change Schedule",
+      "category": "sop",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2025-09-16T11:29:45.120158Z",
+      "lastReviewed": "2026-07-03T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "fryer-oil-filtering-change-schedule.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 86929,
+      "fileUrl": "/api/files/FA-DOC-SOP-001?exp=1790851390&sig=536f1c494abfba7158d481e8f1107c5b",
+      "summary": "Filter nightly, test TPM daily, change at 24% TPM or every 4 service days.",
+      "tags": ["fryer", "oil", "equipment", "supply"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 26,
+      "reviewHistory": [
+        {
+          "at": "2026-07-03T17:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-09-16T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 90,
+      "openTickets": 2
+    },
+    {
+      "id": "DOC-REC-001",
+      "title": "Smoked Brisket (Texas style)",
+      "category": "recipe",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2025-08-27T11:29:45.120158Z",
+      "lastReviewed": "2026-09-01T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "smoked-brisket-texas-style.docx",
+      "fileKind": "docx",
+      "fileBytes": 40435,
+      "fileUrl": "/api/files/FA-DOC-REC-001?exp=1790851390&sig=374cd463fb29908178c8a05f8e584f94",
+      "summary": "14-hour post-oak smoke, salt-and-pepper rub, wrap at 165°F, hold at 150°F.",
+      "tags": ["bbq", "protein", "hold"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 9,
+      "reviewHistory": [
+        {
+          "at": "2026-09-01T17:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-08-27T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 30,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-INC-001",
+      "title": "Incident: Walk-in Compressor Failure",
+      "category": "incident",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-08-27T11:29:45.120158Z",
+      "lastReviewed": "2025-08-27T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "incident-walk-in-compressor-failure.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 98431,
+      "fileUrl": "/api/files/FA-DOC-INC-001?exp=1790851390&sig=e8c2ddc8a987f3b149c0db8cdee27a6d",
+      "summary": "Compressor failed overnight; 180 lb of product discarded; vendor response 5 h.",
+      "tags": ["walk-in", "refrigeration", "loss"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 26,
+      "reviewHistory": [
+        {
+          "at": "2025-08-27T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 400,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-ONB-005",
+      "title": "Food Safety Basics: Temperature Danger Zone",
+      "category": "onboarding",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-08-17T11:29:45.120158Z",
+      "lastReviewed": "2026-08-27T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "food-safety-basics-temperature-danger-zone.md",
+      "fileKind": "md",
+      "fileBytes": 4878,
+      "fileUrl": "/api/files/FA-DOC-ONB-005?exp=1790851390&sig=5cb1d6cc3bd18e3f5ddf448baac8e4a0",
+      "summary": "Danger zone 41–135°F; cold holding ≤ 41°F; hot holding ≥ 135°F; reheat to 165°F.",
+      "tags": ["onboarding", "food-safety", "temperatures"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 10,
+      "reviewHistory": [
+        {
+          "at": "2026-08-27T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-08-17T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 35,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-REC-006",
+      "title": "House Vinaigrettes",
+      "category": "recipe",
+      "station": "prep",
+      "ownerId": "CM-07",
+      "createdAt": "2025-08-07T11:29:45.120158Z",
+      "lastReviewed": "2026-04-04T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-07",
+      "fileName": "house-vinaigrettes.xlsx",
+      "fileKind": "xlsx",
+      "fileBytes": 11262,
+      "fileUrl": "/api/files/FA-DOC-REC-006?exp=1790851390&sig=f45dd1d05c42367b12a156320e7470e1",
+      "summary": "Sherry, champagne and lemon-dijon vinaigrettes; 3:1 ratio; 7-day shelf life.",
+      "tags": ["sauce", "cold"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 7,
+      "reviewHistory": [
+        {
+          "at": "2026-04-04T17:29:45.120158Z",
+          "by": "CM-07",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-08-07T11:29:45.120158Z",
+          "by": "CM-07",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 180,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-ONB-001",
+      "title": "Knife Safety & Handling",
+      "category": "onboarding",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-07-08T11:29:45.120158Z",
+      "lastReviewed": "2026-08-12T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "knife-safety-handling.pptx",
+      "fileKind": "pptx",
+      "fileBytes": 37992,
+      "fileUrl": "/api/files/FA-DOC-ONB-001?exp=1790851390&sig=6a62a5a7842d1103a89b5358b3c81b45",
+      "summary": "Claw grip, damp towel under boards, never catch a falling knife.",
+      "tags": ["onboarding", "safety", "knives"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 11,
+      "reviewHistory": [
+        {
+          "at": "2026-08-12T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-07-08T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 50,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-SOP-006",
+      "title": "Dish Machine Sanitizer Checks",
+      "category": "sop",
+      "station": "foh",
+      "ownerId": "CM-09",
+      "createdAt": "2025-06-18T11:29:45.120158Z",
+      "lastReviewed": "2026-03-15T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-09",
+      "fileName": "dish-machine-sanitizer-checks.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 76237,
+      "fileUrl": "/api/files/FA-DOC-SOP-006?exp=1790851390&sig=8cc419c3829b32e36753ca661aacd7f0",
+      "summary": "Chlorine 50–100 ppm; test at every shift start and after each chemical change.",
+      "tags": ["dish", "sanitizer", "food-safety"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 25,
+      "reviewHistory": [
+        {
+          "at": "2026-03-15T17:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-06-18T11:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": true,
+      "daysSinceReview": 200,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-REC-004",
+      "title": "Laminated Croissant Dough",
+      "category": "recipe",
+      "station": "pastry",
+      "ownerId": "CM-04",
+      "createdAt": "2025-05-19T11:29:45.120158Z",
+      "lastReviewed": "2026-03-05T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-04",
+      "fileName": "laminated-croissant-dough.pptx",
+      "fileKind": "pptx",
+      "fileBytes": 38615,
+      "fileUrl": "/api/files/FA-DOC-REC-004?exp=1790851390&sig=41e575d765db731e6c1ff1eb0e94b7a2",
+      "summary": "Three single folds; proof at 78°F / 80% RH for 2 h. Last reviewed before the proofer was replaced.",
+      "tags": ["pastry", "lamination", "proofing"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 13,
+      "reviewHistory": [
+        {
+          "at": "2026-03-05T17:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-05-19T11:29:45.120158Z",
+          "by": "CM-04",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": true,
+      "daysSinceReview": 210,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-INC-005",
+      "title": "Incident: Slip in Dish Pit",
+      "category": "incident",
+      "station": "foh",
+      "ownerId": "CM-09",
+      "createdAt": "2025-05-19T11:29:45.120158Z",
+      "lastReviewed": "2025-05-19T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-09",
+      "fileName": "incident-slip-in-dish-pit.docx",
+      "fileKind": "docx",
+      "fileBytes": 40396,
+      "fileUrl": "/api/files/FA-DOC-INC-005?exp=1790851390&sig=c6796cfb5b90e5f574967a689cd9b2d6",
+      "summary": "Dishwasher slipped on a wet floor; anti-slip mats installed.",
+      "tags": ["safety", "dish"],
+      "status": "ready",
+      "version": 1,
+      "chunkCount": 11,
+      "reviewHistory": [
+        {
+          "at": "2025-05-19T11:29:45.120158Z",
+          "by": "CM-09",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": false,
+      "daysSinceReview": 500,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-SOP-003",
+      "title": "Cooling Hot Foods (Two-Stage Cooling)",
+      "category": "sop",
+      "station": "prep",
+      "ownerId": "CM-06",
+      "createdAt": "2025-04-29T11:29:45.120158Z",
+      "lastReviewed": "2026-02-03T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-06",
+      "fileName": "cooling-hot-foods-two-stage-cooling.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 88183,
+      "fileUrl": "/api/files/FA-DOC-SOP-003?exp=1790851390&sig=b86e4d277a8db9c8968ee7f629555e59",
+      "summary": "135°F → 70°F within 2 h, then 70°F → 41°F within a further 4 h (6 h total).",
+      "tags": ["cooling", "food-safety", "blast-chiller", "stock"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 19,
+      "reviewHistory": [
+        {
+          "at": "2026-02-03T17:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-04-29T11:29:45.120158Z",
+          "by": "CM-06",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": true,
+      "daysSinceReview": 240,
+      "openTickets": 1
+    },
+    {
+      "id": "DOC-ONB-002",
+      "title": "Grill Station Orientation",
+      "category": "onboarding",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2025-04-09T11:29:45.120158Z",
+      "lastReviewed": "2026-03-25T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "grill-station-orientation.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 79928,
+      "fileUrl": "/api/files/FA-DOC-ONB-002?exp=1790851390&sig=0cfdfa449f9a9e3fe84751ba8624e6f6",
+      "summary": "Station map, heat zones, ticket flow and mise en place for new grill cooks.",
+      "tags": ["onboarding", "grill"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 22,
+      "reviewHistory": [
+        {
+          "at": "2026-03-25T17:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-04-09T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": true,
+      "daysSinceReview": 190,
+      "openTickets": 0
+    },
+    {
+      "id": "DOC-SOP-005",
+      "title": "Grill Deep Clean & Degreasing",
+      "category": "sop",
+      "station": "grill",
+      "ownerId": "CM-02",
+      "createdAt": "2025-01-29T11:29:45.120158Z",
+      "lastReviewed": "2025-12-05T17:29:45.120158Z",
+      "source": "seed",
+      "uploadedBy": "CM-02",
+      "fileName": "grill-deep-clean-degreasing.pdf",
+      "fileKind": "pdf",
+      "fileBytes": 81881,
+      "fileUrl": "/api/files/FA-DOC-SOP-005?exp=1790851390&sig=3cfebd8cf002b9df275f85bcd71c188c",
+      "summary": "Weekly degrease of grill, flat-top and hood filters; monthly hood service.",
+      "tags": ["cleaning", "grill", "hood"],
+      "status": "ready",
+      "version": 2,
+      "chunkCount": 18,
+      "reviewHistory": [
+        {
+          "at": "2025-12-05T17:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Reviewed — no changes needed"
+        },
+        {
+          "at": "2025-01-29T11:29:45.120158Z",
+          "by": "CM-02",
+          "note": "Initial version published"
+        }
+      ],
+      "stale": true,
+      "daysSinceReview": 300,
+      "openTickets": 3
+    }
+  ],
+  "hiddenIncidents": 0
+}

@@ -1,0 +1,63 @@
+{
+  "models": [
+    {
+      "name": "llama3.2:3b",
+      "family": "llama",
+      "parameters": "3.2B",
+      "quantization": "Q4_K_M",
+      "sizeGb": 2.02,
+      "contextLength": 131072,
+      "capabilities": ["completion", "tools"],
+      "thinking": "none",
+      "loaded": false,
+      "keepAlive": "15m",
+      "purpose": "Fast everyday answers and tool calling",
+      "supported": true
+    },
+    {
+      "name": "qwen3:4b-q4_K_M",
+      "family": "qwen3",
+      "parameters": "4.0B",
+      "quantization": "Q4_K_M",
+      "sizeGb": 2.62,
+      "contextLength": 40960,
+      "capabilities": ["completion", "tools", "thinking"],
+      "thinking": "toggle",
+      "loaded": true,
+      "keepAlive": "11m",
+      "purpose": "Step-by-step reasoning (thinking on or off)",
+      "supported": true
+    },
+    {
+      "name": "gemma4:e2b",
+      "family": "gemma4",
+      "parameters": "4.6B",
+      "quantization": "Q4_K_M",
+      "sizeGb": 4.59,
+      "contextLength": 131072,
+      "capabilities": ["completion", "vision", "audio", "tools", "thinking"],
+      "thinking": "toggle",
+      "loaded": false,
+      "keepAlive": "15m",
+      "purpose": "Reads photos and documents; thinking on or off",
+      "supported": true
+    },
+    {
+      "name": "qwen3:0.6b",
+      "family": "qwen3",
+      "parameters": "751.63M",
+      "quantization": "Q4_K_M",
+      "sizeGb": 0.52,
+      "contextLength": 40960,
+      "capabilities": ["completion", "tools", "thinking"],
+      "thinking": "toggle",
+      "loaded": false,
+      "keepAlive": "15m",
+      "purpose": "Available locally: chat, reasoning, tools",
+      "supported": false
+    }
+  ],
+  "default": "llama3.2:3b",
+  "vision": true,
+  "ollamaUp": true
+}
